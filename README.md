@@ -1,4 +1,4 @@
-# Afirpulse
+# Afri-Pulse
 
 Frontend Template
 

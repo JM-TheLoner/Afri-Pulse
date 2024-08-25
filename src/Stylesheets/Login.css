@@ -1,0 +1,675 @@
+.Login {
+    padding: 1rem;
+    overflow-y: auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content:space-between;   
+    background-color: rgb(255, 212, 212);
+    }
+    
+.Wrapper{
+    margin-top: 1em;
+    width: 40em;
+    background-image: linear-gradient(to bottom right, rgb(255, 216, 216), rgb(255, 157, 165), rgb(255, 0, 0));
+    backdrop-filter: blur(20px);
+    border: 1px solid rgb(155, 155, 155);
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    color: antiquewhite; 
+    border-radius: 50px;
+    padding:  10px;
+    height: 41em;
+    margin-right: 7em;
+}
+
+.central{   
+    justify-content: center;
+    display: flex;
+    margin-top: -120px;
+    margin-bottom: -120px;
+}
+
+    .loading{
+        color:#000000;
+        margin-top: -0.8em;
+        font-family:'Times New Roman', Times, serif;
+        position:absolute;
+        font-size: 1.5em;
+        text-align: center;
+        background-color: #949494;
+        justify-content: center;
+        align-items: center;
+    }
+    .failed{
+        color:#4d0000;
+        font-family:'Times New Roman', Times, serif;
+        position:absolute;
+        font-size: 1.2em;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .requirement{
+        color:#4d0000;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 1.5em;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .error{
+        color:#4d0000;
+        font-family:'Times New Roman', Times, serif;
+        position:absolute;
+        font-size: 1.2em;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .App-login {
+        height: 50vmin;
+        pointer-events: none;
+        background: transparent;
+        border: transparent;
+      }
+    
+    .big{
+    text-align: center;
+    cursor: default;
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    color:rgb(255, 241, 241);
+    margin-top: -0.9em;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* animation: Logo-sign-change 5s infinite forwards ease-in-out; */
+    }
+    .dbig{
+        text-align: center;
+        cursor: default;
+        font-size: 3.5em;
+        font-weight: 700;
+        padding-bottom: 0.6em;
+        color:#b8b8b8;
+        margin-top: -0.7em;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+.userText{
+    color: rgb(0, 0, 0);
+    margin-left: 25px;
+}
+.passText{
+    color: rgb(0, 0, 0);
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+.onTheLeft{
+    justify-content: left;
+    position: relative;
+}
+@keyframes slideinlog {
+    from{
+        color: transparent;
+        margin-left: -1em;
+    }
+    to{
+        color: rgb(255, 239, 239);
+        margin-left: 30px;
+    }
+  }
+
+.TopLine1{
+    margin-top: 30px;
+    margin-left: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-weight: 900;
+    font-size: 3em;
+    /* animation: slideinlog 1s linear 100ms 1 ; */
+    padding-right: 1em;
+    text-align: center;
+}
+.LineTwo1{
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 25em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-weight: 900;
+    font-size: 1.6em;
+    /* animation: slideinlog 1s linear 100ms 1 ; */
+    text-align: center;
+}
+.LineThree1{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 25em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-weight: 900;
+    font-size: 1.6em;
+    /* animation: slideinlog 1s linear 100ms 1 ; */
+    text-align: center;
+}
+
+.logimg{
+    height: 60vmin;
+    pointer-events: none;
+    background: transparent;
+    border: transparent;
+    margin-bottom: -40px;
+    margin-top: -40px;
+    /* animation: slideinlog 1s linear 100ms 1 ; */
+    margin-left: 120px;
+}
+
+    .Login .UserinputBox{
+    width: 100%;
+    height: 60px;
+    margin-top: 0px;
+    position: relative;
+    padding-left: 4%;
+    }
+    
+    .UserinputBox input{
+    width: 95%;
+    height: 3em;
+    background: #dddddd ;
+    border: 2px solid gray;
+    border-radius: 05px;
+    padding: 20px 40px 20px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    }
+    
+    .UserinputBox input::placeholder{
+    color:rgb(100, 100, 100)
+    }
+    
+    .Login .UserinputBoxred{
+    width: 100%;
+    height: 60px;
+    margin-top: 0px;
+    position: relative;
+    padding-left: 4%;
+    }
+    
+    .UserinputBoxred input{
+    width: 95%;
+    height: 3em;
+    background: #dddddd ;
+    border: 2px solid gray;
+    border-radius: 05px;
+    box-shadow: 0 0 10px #4d0000;
+    padding: 20px 40px 20px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    }
+    .UserinputBox input:hover,
+    .UserinputBox input:focus{
+    background-color: #a5a5a5;
+}
+    .UserinputBoxred input:hover,
+    .UserinputBoxred input:focus{
+    background-color: #a5a5a5;
+}
+    .UserinputBoxred input::placeholder{
+    color:rgb(100, 100, 100)
+    }
+    .Login .passinputBox{
+        width: 100%;
+        height: 60px;
+        margin-top: 0px;
+        position: relative;
+        padding-left: 4%;
+    }
+    
+    .passinputBox input{
+    width: 95%;
+    height: 3em;
+    background: #dddddd ;
+    border: 2px solid gray;
+    border-radius: 05px;
+    padding: 20px 40px 20px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    }
+    
+    .passinputBox input::placeholder{
+    color:rgb(100, 100, 100)
+    }
+    
+    .Login .passinputBoxred{
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+    position: relative;
+    }
+    
+    .passinputBoxred input{
+    width: 95%;
+    height: 3em;
+    background: #dddddd ;
+    border: 2px solid gray;
+    border-radius: 05px;
+    box-shadow: 0 0 10px #4d0000;
+    padding: 20px 40px 20px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    }
+    
+    .passinputBox input:hover,
+    .passinputBox input:focus{
+    background-color: #a5a5a5;
+}
+    .passinputBoxred input:hover,
+    .passinputBoxred input:focus{
+    background-color: #a5a5a5;
+}
+    .passinputBoxred input::placeholder{
+    color:rgb(100, 100, 100)
+    }
+    
+    .space{
+        margin-top: 1em;
+    }
+    
+    .spaceout{
+        font-size: 18px;
+        color: #000000;
+    }
+    .forgot{
+        position: relative; bottom: 30px;
+        font-size: 18px;
+        color: #000000;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .dforgot{
+        position: relative; bottom: 30px;
+        font-size: 18px;
+        color: #b8b8b8;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .signup{
+        position: relative; bottom: 30px;
+        display: flex;
+        justify-content: center;
+        margin-left: -3%;
+        margin-bottom: -20px;
+        margin-top: 10px;
+    }
+    .dsignup{
+        position: relative; bottom: 30px;
+        display: flex;
+        justify-content: center;
+        margin-left: -3%;
+        margin-bottom: -20px;
+        margin-top: 10px;
+    }
+    .spaceoutlink{
+        color: #990000;
+        margin-left: 20px;
+        font-size: 18px;
+    }
+    .dspaceoutlink{
+        color: #990000;
+        margin-left: 20px;
+        font-size: 18px;
+    }
+    .spaceoutlink:hover,
+    .spaceoutlink:focus{
+        color:#6d0000;
+        font-style: italic;
+    }
+    .dspaceout{
+        font-size: 18px;
+        color: #b8b8b8;
+        margin-left: 20px;
+    }
+    .dspaceoutlink:hover,
+    .dspaceoutlink:focus{
+        color:#6d0000;
+        font-style: italic;
+    }
+    .dforgot:hover,
+    .dforgot:focus{
+        color:#6d0000;
+        font-style: italic;
+    }
+    .forgot:hover,
+    .forgot:focus{
+        color:#6d0000;
+        font-style: italic;
+    }
+    
+    .Login .button{
+    position: relative; bottom: 40px;
+    padding-top: 5px;
+    margin-left: 20%;
+    width: 60%;
+    height: 55px;
+    background: #b9b9b9;
+    border-radius: 05px;
+    box-shadow: 0 0 10px rgb(29, 29, 29);
+    cursor: pointer;
+    color: #000000;
+    font-weight: 700;
+    font-size:30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 100ms ease-in-out 100ms;
+    }
+    
+    .Login .button:hover{
+        transform:translateY(0.1em);
+        background: #990000;
+    }
+    
+    .eyebtn1{
+        position: relative; bottom:60px; left:500px;
+        background: transparent;
+        border: transparent;
+        cursor: pointer;
+    }
+    .eyebtn1:hover{
+        transform: scale(1.1);
+        transition: ease-in-out;
+    }
+    .eye1{
+        height: 9vmin;
+        pointer-events: none;
+        cursor: pointer;    
+    }
+    
+    @media screen and (max-width:670px) and (min-width:469px) {
+        .big{
+            text-align: center;
+            font-size: 2em;
+            font-weight: 700;
+            color: black;
+            cursor: default;
+            margin-top: 0em;
+            margin-bottom: 0em;
+            width: 95%;
+        }  
+        .dbig{
+            text-align: center;
+            font-size: 2em;
+            font-weight: 700;
+            color:#b8b8b8;
+            cursor: default;
+            margin-top: 0em;
+            margin-bottom: 0em;
+            width: 95%;
+        }  
+        .Login .passinputBox{
+            width: 98%;
+            height: 60px;
+            margin-top: 65px;
+            position: absolute;
+        }
+        .passinputBox input{
+            width: 70%;
+            height: 0%;
+            border: 2px solid gray;
+            border-radius: 40px;
+            padding: 20px 40px 20px 20px;
+            font-size: 24px;
+            font-weight: 600;
+        }
+    
+        .Login .userinputBox{
+            width: 100%;
+            height: 60px;
+            margin-top: 5px;
+            position: absolute;
+            margin-left: 0%;
+            }
+        
+        .userinputBox input{
+            width: 70%;
+            height: 0%;
+            border: 2px solid gray;
+            border-radius: 40px;
+            padding: 20px 40px 20px 20px;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .Login .passinputBoxred{
+            width: 98%;
+            height: 60px;
+            margin-top: 65px;
+            position: absolute;
+        }
+        .passinputBoxred input{
+            width: 90%;
+            height: 0%;
+            border: 2px solid gray;
+            border-radius: 40px;
+            padding: 20px 40px 20px 20px;
+            font-size: 24px;
+            font-weight: 600;
+        }
+    
+        .Login .inputBoxred{
+            width: 100%;
+            height: 60px;
+            margin-top: 5px;
+            position: absolute;
+            margin-left: 0%;
+            }
+        
+        .inputBoxred input{
+            width: 90%;
+            height: 0%;
+            border: 2px solid gray;
+            border-radius: 40px;
+            padding: 20px 40px 20px 20px;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .Login .btn{
+            margin-top: 135px;
+            padding-top: 5px;
+            width: 30%;
+            height: 45px;
+            background: #b9b9b9;
+            border-radius: 40px;
+            box-shadow: 0 0 10px rgb(29, 29, 29);
+            cursor: pointer;
+            color: #000000;
+            font-weight: 700;
+            font-size:20px;
+        }
+        .eyebtn1{
+            position: absolute;
+            margin-left: 35%;
+            margin-top: 4.5em;
+            padding-left: 10px;
+            margin-bottom: 1em;
+            background: transparent;
+            border: transparent;
+        }
+        .eyebtn1:hover{
+            transform: scale(1.1);
+        }
+        .eye1{
+            height: 8vmin;
+            pointer-events: none;
+            cursor: pointer;    
+        }
+      }
+      @media screen and (max-width:470px){
+        .big{
+            text-align: center;
+            font-size: 2em;
+            font-weight: 700;
+            color: black;
+            cursor: default;
+            margin-top: -1em;
+            margin-bottom: 0em;
+            width: 95%;
+        }  
+        .dbig{
+            text-align: center;
+            font-size: 2em;
+            font-weight: 700;
+            color:#b8b8b8;
+            cursor: default;
+            margin-top: -1em;
+            margin-bottom: 0em;
+            width: 95%;
+        }  
+        .Login .passinputBox{
+            width: 98%;
+            height: 60px;
+            margin-top: 65px;
+            position: absolute;
+        }
+        .passinputBox input{
+            width: 90%;
+            height: 0%;
+            border: 2px solid gray;
+            border-radius: 40px;
+            padding: 20px 40px 20px 20px;
+            font-size: 24px;
+            font-weight: 600;
+        }
+    
+        .Login .userinputBox{
+            width: 110%;
+            height: 60px;
+            margin-top: 5px;
+            position: absolute;
+            margin-left: -1.5em;
+            }
+        
+        .userinputBox input{
+            width: 90%;
+            height: 0%;
+            border: 2px solid gray;
+            border-radius: 40px;
+            padding: 20px 40px 20px 20px;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .Login .passinputBoxred{
+            width: 98%;
+            height: 60px;
+            margin-top: 65px;
+            position: absolute;
+        }
+        .passinputBoxred input{
+            width: 90%;
+            height: 0%;
+            border: 2px solid gray;
+            border-radius: 40px;
+            padding: 20px 40px 20px 20px;
+            font-size: 24px;
+            font-weight: 600;
+        }
+    
+        .Login .inputBoxred{
+            width: 110%;
+            height: 60px;
+            margin-top: 5px;
+            position: absolute;
+            margin-left: -1.5em;
+            }
+        
+        .inputBoxred input{
+            width: 90%;
+            height: 0%;
+            border: 2px solid gray;
+            border-radius: 40px;
+            padding: 20px 40px 20px 20px;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .Login .btn{
+            margin-top: 125px;
+            padding-top: 5px;
+            width: 30%;
+            height: 45px;
+            background: #b9b9b9;
+            border-radius: 40px;
+            box-shadow: 0 0 10px rgb(29, 29, 29);
+            cursor: pointer;
+            color: #000000;
+            font-weight: 700;
+            font-size:20px;
+        }
+        .eyebtn1{
+            position: absolute;
+            margin-left: 30%;
+            margin-top: 4.5em;
+            padding-left: 10px;
+            margin-bottom: 1em;
+            background: transparent;
+            border: transparent;
+        }
+        .eyebtn1:hover{
+            transform: scale(1.1);
+        }
+        .eye1{
+            height: 11vmin;
+            pointer-events: none;
+            cursor: pointer;    
+        }
+      }
+      @media screen and (max-width:992px) and (min-width:669px) {
+        .eyebtn1{
+            position: absolute;
+            margin-left: 30%;
+            margin-top: 4.5em;
+            padding-left: 10px;
+            margin-bottom: 1em;
+            background: transparent;
+            border: transparent;
+        }
+        .Login .passinputBox{
+            width: 90%;
+            height: 60px;
+            margin-top: 65px;
+            position: absolute;
+        }
+        .passinputBox input{
+            width: 70%;
+            height: 0%;
+            border: 2px solid gray;
+            border-radius: 40px;
+            padding: 20px 40px 20px 20px;
+            font-size: 24px;
+            font-weight: 600;
+        }
+    
+        .Login .userinputBox{
+            width: 90%;
+            height: 60px;
+            margin-top: 5px;
+            position: absolute;
+            }
+        
+        .userinputBox input{
+            width: 100%;
+            height: 0%;
+            border: 2px solid gray;
+            border-radius: 40px;
+            padding: 20px 40px 20px 20px;
+            font-size: 24px;
+            font-weight: 600;
+        }  
+        .Login .btn{
+            margin-top: 125px;
+            padding-top: 5px;
+            width: 30%;
+            height: 45px;
+            background: #b9b9b9;
+            border-radius: 40px;
+            box-shadow: 0 0 10px rgb(29, 29, 29);
+            cursor: pointer;
+            color: #000000;
+            font-weight: 700;
+            font-size:20px;
+        }
+      } 

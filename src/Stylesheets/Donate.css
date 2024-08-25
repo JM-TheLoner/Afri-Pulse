@@ -1,0 +1,867 @@
+.Donate{
+background-color: #dbdbdb;
+min-height: 90vmin;
+align-items: center;
+justify-content: center;
+padding-bottom: 10px;
+display: flex;
+}
+.donwrapper{
+margin-top: 1em;
+width: 45em;
+background: transparent;
+border-radius: 50px;
+height: fit-content;
+backdrop-filter: blur(20px);
+border: 1px solid rgb(155, 155, 155);
+box-shadow: 0 0 5px rgb(0, 0, 0);
+border-radius: 50px;
+background-image: linear-gradient(to bottom right, rgb(255, 216, 216), rgb(255, 157, 165), rgb(255, 0, 0));
+padding-bottom: 20px;
+}
+
+.dontitle{
+text-align: center;
+cursor: default;
+font-size: 2.5em;
+font-weight: 700;
+padding-bottom: 20px;
+color:rgb(255, 241, 241);
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.ddontitle{
+text-align: center;
+cursor: default;
+font-size: 2.5em;
+font-weight: 700;
+padding-bottom: 20px;
+color: #b8b8b8;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.inputBoxweight{
+width: 100%;
+height: 60px;
+margin-top: 5px;
+margin-bottom: 5px;
+position: relative;
+}
+.inputBoxweight input{
+margin-left: 10px;
+width: 95%;
+height: 3em;
+background: #dddddd ;
+border: 2px solid gray;
+border-radius: 05px;
+padding: 20px 40px 20px 20px;
+font-size: 20px;
+font-weight: 600;
+justify-content: center;
+}
+.inputBoxweight input::placeholder{
+color:rgb(155, 155, 155)
+}
+.inputBoxweight input:hover,
+.inputBoxweight input:focus{
+background-color: #c9c9c9;
+}
+
+.inputBoxweightred{
+width: 100%;
+height: 60px;
+margin-top: 5px;
+margin-bottom: 5px;
+position: relative;
+}
+.inputBoxweightred input{
+margin-left: 10px;
+width: 95%;
+height: 3em;
+background: #dddddd ;
+border: 2px solid gray;
+border-radius: 05px;
+padding: 20px 40px 20px 20px;
+font-size: 20px;
+font-weight: 600;
+justify-content: center;
+box-shadow: 0 0 10px #ff0000;
+}
+.inputBoxweightred input::placeholder{
+color:rgb(155, 155, 155)
+}
+        
+.inputBoxweightred input:hover,
+.inputBoxweightred input:focus{
+background-color: #c9c9c9;
+}
+
+
+.inputBoxblood{
+width: 100%;
+height: 60px;
+margin-top: 5px;
+position: relative;
+}
+
+.inputBoxblood select{
+    background-color:#dddddd;
+    margin-left: 10px;
+    width: 95%;
+    height: 3em;
+    background: #dddddd ;
+    border: 2px solid gray;
+    border-radius: 05px;
+    padding: 20px 40px 20px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    justify-content: center;
+    margin-left: 10px;
+    color: #000000;
+}
+.inputBoxblood option{
+    background-color:#dddddd;
+    border: 2px solid gray;
+    padding-left: 10px;
+    border-radius: 40px;
+    margin-left: 10px;
+    width: 95%;
+    height: 1em;
+    font-weight: 600;
+    justify-content: center;
+    margin-bottom: 0.3em;
+    color: #000000;
+    font-size: 15px;
+}
+
+.inputBoxblood select :hover,
+.inputBoxblood select :focus{
+    background-color:#c9c9c9
+    }
+
+
+.inputBoxbloodred{
+width: 100%;
+height: 60px;
+margin-top: 5px;
+position: relative;
+}
+
+.inputBoxbloodred select{
+    background-color:#dddddd;
+    margin-left: 10px;
+    width: 95%;
+    height: 3em;
+    background: #dddddd ;
+    border: 2px solid gray;
+    border-radius: 05px;
+    padding: 20px 40px 20px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    justify-content: center;
+    margin-left: 10px;
+    color: #000000;
+    box-shadow: 0 0 10px #ff0000;
+}
+.inputBoxbloodred option{
+    background-color:#dddddd;
+    border: 2px solid gray;
+    padding-left: 10px;
+    border-radius: 40px;
+    margin-left: 10px;
+    width: 95%;
+    height: 1em;
+    font-weight: 600;
+    justify-content: center;
+    margin-bottom: 0.3em;
+    color: #000000;
+    font-size: 15px;
+}
+
+.inputBoxbloodred select :hover,
+.inputBoxbloodred select :focus{
+    background-color:#c9c9c9
+    }
+        .inputBoxrhesus{
+            width: 100%;
+            height: 60px;
+            margin-top: 5px;
+            position: relative;
+            }            
+    
+        .inputBoxrhesus select{
+            background-color:#dddddd;
+            margin-left: 10px;
+            width: 95%;
+            height: 3em;
+            background: #dddddd ;
+            border: 2px solid gray;
+            border-radius: 05px;
+            padding: 20px 40px 20px 20px;
+            font-size: 20px;
+            font-weight: 600;
+            justify-content: center;
+            margin-left: 10px;
+            color: #000000;
+        }
+        .inputBoxrhesus option{
+            background-color:#dddddd;
+            border: 2px solid gray;
+            padding-left: 10px;
+            border-radius: 40px;
+            margin-left: 10px;
+            width: 95%;
+            height: 1em;
+            font-weight: 600;
+            justify-content: center;
+            margin-bottom: 0.3em;
+            color: #000000;
+            font-size: 15px;
+        }
+        
+        .inputBoxrhesus :hover,
+        .inputBoxrhesus :focus{
+            background-color:#c9c9c9
+            }
+        
+        .inputBoxrhesusred{
+        width: 100%;
+        height: 60px;
+        margin-top: 5px;
+        position: relative;
+        }
+        
+        .inputBoxrhesusred select{
+            background-color:#dddddd;
+            margin-left: 10px;
+            width: 95%;
+            height: 3em;
+            background: #dddddd ;
+            border: 2px solid gray;
+            border-radius: 05px;
+            padding: 20px 40px 20px 20px;
+            font-size: 20px;
+            font-weight: 600;
+            justify-content: center;
+            margin-left: 10px;
+            color: #000000;
+            box-shadow: 0 0 10px #ff0000;
+        }
+        .inputBoxrhesusred option{
+            background-color:#dddddd;
+            border: 2px solid gray;
+            padding-left: 10px;
+            border-radius: 40px;
+            margin-left: 10px;
+            width: 95%;
+            height: 1em;
+            font-weight: 600;
+            justify-content: center;
+            margin-bottom: 0.3em;
+            color: #000000;
+            font-size: 15px;
+        }
+        
+        .inputBoxrhesusred select :hover,
+        .inputBoxrhesusred select :focus{
+            background-color:#c9c9c9
+            }
+    
+
+.inputBoxgeno{
+width: 100%;
+height: 60px;
+margin-top: 5px;
+position: relative;
+}
+
+.inputBoxgeno select{
+    background-color:#dddddd;
+    margin-left: 10px;
+    width: 95%;
+    height: 3em;
+    background: #dddddd ;
+    border: 2px solid gray;
+    border-radius: 05px;
+    padding: 20px 40px 20px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    justify-content: center;
+    margin-left: 10px;
+    color: #000000;
+}
+.inputBoxgeno option{
+    background-color:#dddddd;
+    border: 2px solid gray;
+    padding-left: 10px;
+    border-radius: 40px;
+    margin-left: 10px;
+    width: 95%;
+    height: 1em;
+    font-weight: 600;
+    justify-content: center;
+    margin-bottom: 0.3em;
+    color: #000000;
+    font-size: 15px;
+}
+
+.inputBoxgeno input::placeholder{
+    color:rgb(155, 155, 155)
+    }
+.inputBoxgeno :hover,
+.inputBoxgeno :focus{
+background-color:#c9c9c9
+}
+.inputBoxgender{
+width: 100%;
+height: 60px;
+margin-top: 5px;
+position: relative;
+}
+
+.inputBoxgender select{
+    background-color:#dddddd;
+    margin-left: 10px;
+    width: 95%;
+    height: 3em;
+    background: #dddddd ;
+    border: 2px solid gray;
+    border-radius: 05px;
+    padding: 20px 40px 20px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    justify-content: center;
+    margin-left: 10px;
+    color: #000000;
+}
+.inputBoxgender option{
+    background-color:#dddddd;
+    border: 2px solid gray;
+    padding-left: 10px;
+    border-radius: 40px;
+    margin-left: 10px;
+    width: 95%;
+    height: 1em;
+    font-weight: 600;
+    justify-content: center;
+    margin-bottom: 0.3em;
+    color: #000000;
+    font-size: 15px;
+}
+
+.inputBoxgender input::placeholder{
+    color:rgb(155, 155, 155)
+    }
+.inputBoxgender :hover,
+.inputBoxgender :focus{
+background-color:#c9c9c9
+}
+.inputBoxgenderred{
+width: 100%;
+height: 60px;
+margin-top: 5px;
+position: relative;
+}
+
+.inputBoxgenderred select{
+    background-color:#dddddd;
+    margin-left: 10px;
+    width: 95%;
+    height: 3em;
+    background: #dddddd ;
+    border: 2px solid gray;
+    border-radius: 05px;
+    padding: 20px 40px 20px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    justify-content: center;
+    margin-left: 10px;
+    color: #000000;
+}
+.inputBoxgenderred option{
+    background-color:#dddddd;
+    border: 2px solid gray;
+    padding-left: 10px;
+    border-radius: 40px;
+    margin-left: 10px;
+    width: 95%;
+    height: 1em;
+    font-weight: 600;
+    justify-content: center;
+    margin-bottom: 0.3em;
+    color: #000000;
+    font-size: 15px;
+}
+
+.inputBoxgenderred input::placeholder{
+    color:rgb(155, 155, 155)
+    }
+.inputBoxgenderred :hover,
+.inputBoxgenderred :focus{
+background-color:#c9c9c9
+}
+
+.inputBoxgenored{
+    width: 100%;
+    height: 60px;
+    margin-top: 5px;
+    position: relative;
+}
+
+.inputBoxgenored select{
+    background-color:#dddddd;
+    margin-left: 10px;
+    width: 95%;
+    height: 3em;
+    background: #dddddd ;
+    border: 2px solid gray;
+    border-radius: 05px;
+    padding: 20px 40px 20px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    justify-content: center;
+    margin-left: 10px;
+    color: #000000;
+box-shadow: 0 0 10px #ff0000;
+}
+.inputBoxgenored option{
+    background-color:#dddddd;
+    border: 2px solid gray;
+    padding-left: 10px;
+    border-radius: 40px;
+    margin-left: 10px;
+    width: 95%;
+    height: 1em;
+    font-weight: 600;
+    justify-content: center;
+    margin-bottom: 0.3em;
+    color: #000000;
+    font-size: 15px;
+}
+
+.inputBoxgenored ::placeholder{
+    color:rgb(155, 155, 155)
+    }
+    
+.inputBoxgenored :hover,
+.inputBoxgenored :focus{
+    background-color:#c9c9c9
+    }
+
+.inputBoxdate{
+    width: 100%;
+    height: 60px;
+    margin-top: 5px;
+    position: relative;
+    }
+
+    .inputBoxdate input{
+        margin-left: 10px;
+        width: 95%;
+        height: 3em;
+        background: #dddddd ;
+        border: 2px solid gray;
+        border-radius: 05px;
+        padding: 20px 40px 20px 20px;
+        font-size: 20px;
+        font-weight: 600;
+        justify-content: center;
+        margin-bottom: 0.3em;
+
+    }
+    
+    .inputBoxdate input::placeholder{
+    color:rgb(155, 155, 155)
+    }
+    .inputBoxdate :hover,
+    .inputBoxdate :focus{
+        background-color:#c9c9c9
+        }
+    .inputBoxdatered :hover,
+    .inputBoxdatered :focus{
+    background-color:#c9c9c9
+    }
+
+    .inputBoxdatered input::placeholder{
+    color:rgb(155, 155, 155)
+    }
+
+    .inputBoxdatered{
+        width: 100%;
+        height: 60px;
+        margin-top: 5px;
+        position: relative;
+    }
+
+    .inputBoxdatered input{
+        margin-left: 10px;
+        width: 95%;
+        height: 3em;
+        background: #dddddd ;
+        border: 2px solid gray;
+        border-radius: 05px;
+        padding: 20px 40px 20px 20px;
+        font-size: 20px;
+        font-weight: 600;
+        justify-content: center;
+        margin-bottom: 0.3em;
+    box-shadow: 0 0 10px #ff0000;
+    }
+
+.inputBoxtattxt{
+width: 100%;
+height: 60px;
+margin-top: 5px;
+margin-bottom: 5px;
+position: relative;
+}
+.inputBoxtattxt input{
+margin-left: 10px;
+width: 95%;
+height: 3em;
+background: #dddddd ;
+border: 2px solid gray;
+border-radius: 05px;
+padding: 20px 40px 20px 20px;
+font-size: 20px;
+font-weight: 600;
+justify-content: center;
+}
+.inputBoxtattxt input::placeholder{
+color:rgb(155, 155, 155)
+}
+.inputBoxtattxt input:hover,
+.inputBoxtattxt input:focus{
+background-color: #c9c9c9;
+}
+.inputBoxlocs{
+width: 100%;
+height: 60px;
+margin-top: 5px;
+position: relative;
+}
+
+.inputBoxlocs select{
+    background-color:#dddddd;
+    margin-left: 10px;
+    width: 95%;
+    height: 3em;
+    background: #dddddd ;
+    border: 2px solid gray;
+    border-radius: 05px;
+    padding: 20px 40px 20px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    justify-content: center;
+    margin-left: 10px;
+    color: #000000;
+}
+.inputBoxlocs option{
+    background-color:#dddddd;
+    border: 2px solid gray;
+    padding-left: 10px;
+    border-radius: 40px;
+    margin-left: 10px;
+    width: 95%;
+    height: 1em;
+    font-weight: 600;
+    justify-content: center;
+    margin-bottom: 0.3em;
+    color: #000000;
+    font-size: 15px;
+}
+
+.inputBoxlocs input::placeholder{
+    color:rgb(155, 155, 155)
+    }
+.inputBoxlocs :hover,
+.inputBoxlocs :focus{
+background-color:#c9c9c9
+}
+.inputBoxlocsred{
+width: 100%;
+height: 60px;
+margin-top: 5px;
+position: relative;
+}
+
+.inputBoxlocsred select{
+    background-color:#dddddd;
+    margin-left: 10px;
+    width: 95%;
+    height: 3em;
+    background: #dddddd ;
+    border: 2px solid gray;
+    border-radius: 05px;
+    padding: 20px 40px 20px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    justify-content: center;
+    margin-left: 10px;
+    color: #000000;
+}
+.inputBoxlocsred option{
+    background-color:#dddddd;
+    border: 2px solid gray;
+    padding-left: 10px;
+    border-radius: 40px;
+    margin-left: 10px;
+    width: 95%;
+    height: 1em;
+    font-weight: 600;
+    justify-content: center;
+    margin-bottom: 0.3em;
+    color: #000000;
+    font-size: 15px;
+}
+
+.inputBoxlocsred input::placeholder{
+    color:rgb(155, 155, 155)
+    }
+.inputBoxlocsred :hover,
+.inputBoxlocsred :focus{
+background-color:#c9c9c9
+}
+
+.inputBoxPreg{
+margin-top: 5px;
+margin-left: 30px;
+}
+
+.inputBoxPreg input[type="checkbox"]{
+display: inline-block;
+width: 20px;
+height: 20px;
+background: white left top no-repeat;
+border: 1px solid #ccc;
+cursor: pointer;
+color: #ff0000;
+}
+.inputBoxPreg input[type="checkbox"]:checked{
+background: #d9534f -19px top no-repeat;
+}
+.inputBoxPreg input[type="checkbox"]{
+margin-right: 4px;
+}
+.inputBoxtat{
+margin-top: 5px;
+margin-left: 30px;
+}
+
+.inputBoxtat input[type="checkbox"]{
+display: inline-block;
+width: 20px;
+height: 20px;
+background: white left top no-repeat;
+border: 1px solid #ccc;
+cursor: pointer;
+}
+.inputBoxtat input[type="checkbox"]:checked{
+background: #d9534f -19px top no-repeat;
+}
+.inputBoxtat input[type="checkbox"]{
+margin-right: 4px;
+}
+.inputBoxhist{
+margin-top: 5px;
+margin-left: 30px;
+}
+
+.inputBoxhist input[type="checkbox"]{
+display: inline-block;
+width: 20px;
+height: 20px;
+background: white left top no-repeat;
+border: 1px solid #ccc;
+cursor: pointer;
+}
+.inputBoxhist input[type="checkbox"]:checked{
+background: #d9534f -19px top no-repeat;
+}
+.inputBoxhist input[type="checkbox"]{
+margin-right: 4px;
+}
+
+.inputBoxPregtxt{
+width: 100%;
+height: 60px;
+margin-top: 5px;
+margin-bottom: 5px;
+position: relative;
+}
+.inputBoxPregtxt input{
+margin-left: 10px;
+width: 95%;
+height: 3em;
+background: #dddddd ;
+border: 2px solid gray;
+border-radius: 05px;
+padding: 20px 40px 20px 20px;
+font-size: 20px;
+font-weight: 600;
+justify-content: center;
+}
+.inputBoxPregtxt input::placeholder{
+color:rgb(155, 155, 155)
+}
+.inputBoxPregtxt input:hover,
+.inputBoxPregtxt input:focus{
+background-color: #c9c9c9;
+}
+.inputBoxhistory{
+width: 100%;
+height: 16em;
+margin-top: 5px;
+margin-bottom: 5px;
+position: relative;
+}
+.inputBoxhistory textarea{
+    margin-left: 10px;
+    width: 95%;
+    height: 13em;
+    border: 3px solid gray;
+    border-radius: 05px;
+    padding: 10px 10px 10px 10px;
+    font-size: 20px;
+    font-weight: 600;
+    background: #dddddd;
+    overflow-wrap: break-word;
+    resize: none;
+}
+.inputBoxhistory textarea::placeholder{  
+    color:rgb(170, 170, 170);
+    font-size: 20px;
+    }
+
+    .inputBoxhistory textarea:hover,
+    .inputBoxhistory textarea:focus{
+        background-color: #c9c9c9;
+    } 
+    
+.inputBoxhistoryred{
+    width: 96.5%;
+    margin-top: 0px;
+    position: relative;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.inputBoxhistoryred textarea{
+    width: 100%;
+    height: 13em;
+    border: 3px solid gray;
+    border-radius: 05px;
+    padding: 10px 10px 10px 10px;
+    font-size: 20px;
+    font-weight: 600;
+    background: #dddddd;
+    overflow-wrap: break-word;
+    resize: none;
+    box-shadow: 0 0 10px #ff0000;
+}
+.inputBoxhistoryred textarea::placeholder{
+    color:rgb(170, 170, 170);
+    font-size: 20px;
+    }
+
+    .inputBoxhistoryred textarea:hover,
+    .inputBoxhistoryred textarea:focus{
+        background-color: #c9c9c9;
+    }            
+
+    .godonbtn{
+        position: relative; top:20px; left:230px;
+        margin-bottom: 20px;
+        width: 33%;
+        height: 55px;
+        background: #b9b9b9;
+        border-radius: 05px;
+        box-shadow: 0 0 10px rgb(29, 29, 29);
+        cursor: pointer;
+        color: #000000;
+        font-weight: 700;
+        font-size:30px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        transition: 100ms ease-in-out 100ms;
+        }
+        .godonbtn:hover,
+        .godonbtn:focus{
+        background-color: #ff0000;
+        }
+
+.genTextdon{    
+color: rgb(48, 48, 48);
+margin-left: 25px;
+font-size:20px;
+font-weight: 500;
+}
+.weightTextdon{
+position: relative;
+color: rgb(48, 48, 48);
+margin-left: 25px;
+font-size:20px;
+font-weight: 500;
+}
+.bloodTextdon{
+position: relative;
+color: rgb(48, 48, 48);
+margin-left: 25px;
+font-size:20px;
+font-weight: 500;
+}
+.rhesusTextdon{
+position: relative;
+color: rgb(48, 48, 48);
+margin-left: 25px;
+font-size:20px;
+font-weight: 500;
+}
+.genoTextdon{
+position: relative;
+color: rgb(48, 48, 48);
+margin-left: 25px;
+font-size:20px;
+font-weight: 500;
+}
+.dateTextdon{
+position: relative;
+color: rgb(48, 48, 48);
+margin-left: 25px;
+font-size:20px;
+font-weight: 500;
+}
+.locsTextdon{
+position: relative;
+color: rgb(48, 48, 48);
+margin-left: 25px;
+font-size:20px;
+font-weight: 500;
+}
+.pregTextdon{
+position: relative; top:27px ; left:40px;
+color: rgb(48, 48, 48);
+margin-left: 25px;
+font-size:20px;
+font-weight: 500;
+}
+.tatTextdon{
+position: relative; top:27px ; left:40px;
+color: rgb(48, 48, 48);
+margin-left: 25px;
+font-size:20px;
+font-weight: 500;
+}
+.histTextdon{
+position: relative; top:27px ; left:40px;
+color: rgb(48, 48, 48);
+margin-left: 25px;
+font-size:20px;
+font-weight: 500;
+}
+.subsTextdon{
+position: relative;
+color: rgb(48, 48, 48);
+text-align: center;
+margin-top: 20px;
+margin-bottom: 20px;
+font-size:20px;
+font-weight: 500;
+}

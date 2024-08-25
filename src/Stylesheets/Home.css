@@ -1,0 +1,289 @@
+.Home{
+    padding: 1rem;
+    width:100%;
+    min-height: 90vh;
+    padding-bottom: 30px;
+    background-color: rgb(255, 212, 212);
+}
+.spliting{
+    display: flex;
+    margin-left: 50px;
+    margin-bottom: -110px;
+    position: relative;
+}
+
+.leftside{
+    justify-content: left;
+    width:50%;
+}
+.rightside{
+    justify-content: right;
+    width:30%;
+}
+.TopLine{
+    margin-left: 10px;
+    margin-top: 20px;
+    font-family:serif;
+    font-weight: 900;
+    font-size: 80px;
+    color: rgb(12, 0, 0);
+    animation: fadein 1s linear 100ms 1, slidein 1s linear 100ms 1  ;
+    width:130%;
+}
+.LineTwo{
+    margin-top: 10px;
+    margin-left: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    font-size: 25px;
+    color: rgb(12, 0, 0);
+    animation: slidein 1s linear 100ms 1 ;
+    width:130%;
+}
+.LineThree{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    font-size: 25px;
+    color: rgb(12, 0, 0);
+    animation: slidein 1s linear 100ms 1 ;
+    width:130%;
+}
+.LineFour{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    font-size: 25px;
+    color: rgb(12, 0, 0);
+    animation: slidein 1s linear 100ms 1 ;
+    width:130%;
+}
+.sidebuttons{
+    display: flex;
+}
+.sidepanels{
+    display: flex;
+}
+.donbtnhome{
+    position: relative; top:10px; left:10px;
+    margin-top: 10px;
+    width: 250px;
+    height: 60px;
+    background: #ff0000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(88, 0, 0);
+    cursor: pointer;
+    color: #ffffff;
+    font-size:30px;
+    font-family:'Times New Roman', Times, serif;
+    transition: 100ms, ease-in-out, 100ms;
+}
+
+.donbtnhome:hover,
+.donbtnhome:focus{
+    background-color: #680000;
+}
+.donbtnhome1{
+    position: relative; top:10px; left:50px;
+    margin-top: 10px;
+    width: 250px;
+    height: 60px;
+    background: #c0c0c0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(163, 163, 163);
+    cursor: pointer;
+    color: #000000;
+    font-size:30px;
+    font-family:'Times New Roman', Times, serif;
+    transition: 100ms, ease-in-out, 100ms;
+}
+
+.donbtnhome1:hover,
+.donbtnhome1:focus{
+    background-color: #525252;
+}
+.homeimg{
+    height: 100vmin;
+    width: 100vmin;
+    pointer-events: none;
+    background: transparent;
+    border: transparent;
+    position: relative;
+    bottom:60px;
+    left:10px;
+}
+.homeWrapper{
+    border: 3px solid #7e7e7e;
+    box-shadow:0 0 5px #4b4b4b;
+    width: 95%;
+    height: 700px;
+    border-radius: 10px;
+    background-color: #bebebe;
+    color: black;
+    padding: 20px 10px;
+    margin-left: 20px;
+    padding-bottom: 10px;
+    position: relative;
+}
+.bloodimg{
+    height: 40vmin;
+    pointer-events: none;
+    background: transparent;
+    border: transparent;
+    position: relative;
+    bottom: 80px;
+    left: 540px;
+    margin-bottom: -250px;
+}
+.gift{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    top: 100px;
+    color: rgb(172, 0, 0);
+}
+.imgone{
+    position: relative;
+    bottom: 20px;
+    width: 58vmin;
+    height: 30vmin;
+    pointer-events: none;
+    background: grey;
+    border-bottom:  3px solid grey;
+    border-radius: 3px;
+    padding-bottom: -20px;
+}
+.totalwrapper5{
+    position: relative;
+    bottom: 50px;
+    left: 10px;
+    height: 600px;
+    border: 3px solid #888888;
+    box-shadow:0 0 5px #888888;
+    width: 32%;
+    height: 600px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: black;
+    padding: 20px 10px;
+}
+.totalwrapper6{
+    position: relative;
+    top: 150px;
+    left: 25px;
+    border: 3px solid #888888;
+    box-shadow:0 0 5px #888888;
+    height: 400px;
+    width: 32%;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: black;
+    padding: 20px 10px;
+}
+.totalwrapper7{
+    position: relative;
+    bottom: 50px;
+    left: 40px;
+    height: 600px;
+    border: 3px solid #888888;
+    box-shadow:0 0 5px #888888;
+    width: 32%;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: black;
+    padding: 20px 10px;
+}
+.totaltitle{    
+    margin-top: -10px;
+    color: rgb(0, 0, 0);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.smalltitle1{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+}
+.smalltitle3{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    color: rgb(75, 0, 0);
+}
+.smalltitle{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25px;
+    text-align: left;
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+}
+.totaltitlehome{    
+    margin-top: -10px;
+    color: rgb(0, 0, 0);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.smalltitle11{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+}
+.smalltitle2{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: left;
+    color: red;
+    position: relative;
+    top: 5px;
+}
+.wholinkhome{
+    text-align: left;
+    margin-top: 20px;
+    font-weight: 500;
+    color: red;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25px;
+    position: relative;
+    top: 5px;
+}
+@keyframes slidein {
+    from{
+        color: transparent;
+        margin-left: -1em;
+    }
+    to{
+        color: rgb(12, 0, 0);
+        margin-left: 10px;
+    }
+  }
+@keyframes fadein {
+    from{
+        color: transparent;
+    }
+    to{
+        color: rgb(12, 0, 0);
+    }
+  }
+@keyframes slideinalt {
+    from{
+        color: transparent;
+        margin-right: -1em;
+    }
+    to{
+        color: rgb(12, 0, 0);
+        margin-right: 2px;
+    }
+  }

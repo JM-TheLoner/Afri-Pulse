@@ -1,0 +1,421 @@
+.Header {
+    height: 100%;
+    width: 100%;
+    font-weight:bolder;
+    font-size:1em;
+    z-index: 9;
+    position: sticky;
+    top: 0;
+  }
+  .dHeader {
+    background: #010921;
+    height: 100%;
+    width: 100%;
+    font-weight:bolder;
+    font-size:1em;
+    z-index: 9;
+  }
+  @keyframes slideinnav {
+    from{
+        background-color: transparent;
+        width: 0em;
+    }
+    to{
+        background-color: rgba(255, 109, 111, 0.8);
+        width: 16em;
+    }
+  }
+  @keyframes slideopennav {
+    0%{
+        display:none;
+    }
+    40%{
+      display:none;
+      margin-left: -40px;
+    }
+    100%{
+        display: content;
+    }
+  }
+.Topbar{
+  background:linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 206, 206, 0.85), rgba(255, 109, 111, 0.8));
+  width:100%;
+  font-family:Georgia, 'Times New Roman', Times, serif; 
+  height: 3.5em;
+  z-index: 7;
+  display: flex;
+  border-bottom: 2px solid rgb(155, 155, 155);
+}
+
+.Navbar{    
+  background:linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(252, 223, 223, 0.85), rgba(255, 206, 206, 0.85));
+  width: 16em;
+  height: 100vmin;
+  font-family:Georgia, 'Times New Roman', Times, serif;  
+  z-index: 8;
+  animation: slideinnav 100ms linear 0ms 1, slideopennav 175ms linear 0ms 1;
+  transition: 100ms ease-in-out 100ms;  
+  border: 2px solid rgb(155, 155, 155);
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  top: 0px;
+  position: absolute; 
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  backdrop-filter: blur(50px);
+}
+
+  .linklist{
+    color: black;
+    margin-bottom: 10px; 
+    margin-left: 20px;
+    animation: slideopennav 175ms linear 0ms 1;
+    text-align: left;
+    width: 80%;
+    height:3em;
+    font-size: 20px;
+    padding-bottom: 10px;
+    color: black;
+    text-decoration: none;
+    display:flex;
+  }
+  .linklist:hover{
+    color: red;
+    background-image:linear-gradient(to right, rgba(221, 47, 47, 0.9), rgba(206, 124, 124, 0.9), rgba(255, 206, 206, 0.85));
+    border: 2px solid rgb(211, 211, 211);
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+.headbtnlinetwo{
+  font-size: 30px;
+  margin-top: 20px;
+  font-weight: 500;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  bottom:10px;
+  left:365px;
+}
+ .App-logo2{
+  height: 30vmin;
+  pointer-events: none;
+  margin-left: 60px;
+  position: relative;
+  bottom:80px;
+  left:405px;
+}
+.homelogo{
+  height: 15vmin;
+  pointer-events: none;
+  position: relative;
+  bottom: 30px;
+  right: 30px;
+}
+.homepos{
+  position: relative;
+  top: 15px;
+  right: 50px;
+}
+.aboutlogo{
+  height: 7vmin;
+  pointer-events: none;
+  position: relative;
+  top: 4px;
+  left: 4px;
+}
+.aboutpos{
+  position: relative;
+  top: 15px;
+  left: 18px;
+}
+.contlogo{
+  height: 15vmin;
+  pointer-events: none;
+  position: relative;
+  bottom: 25px;
+  right: 30px;
+}
+.contpos{
+  position: relative;
+  top: 20px;
+  right: 50px;
+}
+.questionlogo{
+  height: 15vmin;
+  pointer-events: none;
+  position: relative;
+  bottom: 23px;
+  right: 27px;
+}
+.questionpos{
+  position: relative;
+  top: 20px;
+  right: 50px;
+}
+.loglogo{
+  height: 15vmin;
+  pointer-events: none;
+  position: relative;
+  bottom: 23px;
+  right: 27px;
+}
+.logpos{
+  position: relative;
+  top: 20px;
+  right: 50px;
+}
+.statlogo{
+  height: 10vmin;
+  pointer-events: none;
+  position: relative;
+  bottom: 8px;
+  right: 7px;
+}
+.statpos{
+  position: relative;
+  top: 20px;
+  right: 12px;
+}
+.userlogo{
+  height: 15vmin;
+  pointer-events: none;
+  position: relative;
+  bottom: 23px;
+  right: 27px;
+}
+.userpos{
+  position: relative;
+  top: 20px;
+  right: 50px;
+}
+  .Navbar:hover,
+  .Navbar:focus{
+    backdrop-filter: blur(10px);
+  }
+  
+  .App-logo1 {
+    height: 36vmin;
+    pointer-events: none;
+    background: transparent;
+    border: transparent;
+    position:relative; bottom:135px; right:0px;
+    animation: slideopennav 175ms linear 0ms 1;
+    margin-bottom: -200px;
+  }
+
+  .btn{
+    height: 30px;
+    width: 100px;
+    background-color: #010921;
+    color: #b8b8b8;
+    border-radius:20px;
+    cursor: pointer;
+    position:relative;
+    left: 700px;
+    top: 10px;
+  }
+  .btnlogged{
+    height: 30px;
+    width: 100px;
+    background-color: #010921;
+    color: #b8b8b8;
+    border-radius:20px;
+    cursor: pointer;
+    position:relative;
+    left: 600px;
+    top: 10px;
+  }
+  .dbtn{
+    height: 30px;
+    width: 100px;
+    color: #010921;
+    border-radius:20px;
+    cursor: pointer;
+    position:relative;
+    left: 700px;
+    top: 10px;
+    background-color: #b8b8b8;
+  }
+
+  .btn:hover,
+  .dbtn:hover{
+    transform: scale(0.9);
+    transition: ease-in-out;
+  }
+
+  .menubtn{
+    height: 40px;
+    width: 40px;
+    background-color: #acacac;
+    border-radius:5px;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: 3px;
+  }
+  .logoutbutton{
+    height: 30px;
+    width: 100px;
+    background-color: #b8b8b8;
+    color: #010921;
+    border-radius:20px;
+    cursor: pointer;
+    position:relative;
+    left: 570px;
+    top: 10px;
+  }
+.headbtnline{
+  font-weight: 500;
+  color: rgb(39, 39, 39);
+}
+.headbtnlineone{
+  font-size: 40px;
+  margin-top:-10px;
+  margin-bottom:-10px;
+}
+  .menubtn:hover,
+  .dmenubtn:hover{
+    background-color: #858585;
+    transition: ease-in-out;
+  }
+
+.linksclosed .Navbar{
+  background:transparent;
+  width: 3.5em;
+  height: 100%;
+  font-family:Georgia, 'Times New Roman', Times, serif;  
+  z-index: 8;
+  transition: 100ms ease-in-out 100ms;  
+  border: 0px solid rgb(155, 155, 155);
+  top: 0px;
+  position: absolute; 
+  backdrop-filter: blur(0px);
+}
+.linksclosed .Navbar:hover{
+  background:linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 206, 206, 0.85), rgba(255, 109, 111, 0.8));
+  backdrop-filter: blur(80px);
+  border: 2px solid rgb(155, 155, 155);
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  opacity:0.4;
+}
+
+.linksclosed .App-logo1{
+  display: none;
+}
+.linksclosed .linklist{
+  display: none;
+}
+
+
+  @media screen and (max-width:992px) {
+    .Header ul {
+      color: black;
+      list-style-type: none;
+      display:contents;
+      flex-wrap: nowrap;
+      align-items:flex-end;
+    }
+    .totheright{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    .headspace4{
+        display: none;
+      }
+
+      .Header li:hover, 
+      .Header li:focus {
+        padding:  0.6rem;
+      }
+      
+    .Header li {
+        padding: 0.4rem;
+  }
+      .dHeader li:hover, 
+      .dHeader li:focus {
+        padding:  0.6rem;
+      }
+      
+    .dHeader li {
+        padding: 0.4rem;
+  }
+
+    .headspacelog{
+        margin-top: -5px;
+        font-size: 13px;
+        margin-left: -60px;
+        margin-right: 10px;
+    } 
+
+    .headspace1{
+        padding-left: 1.4em;
+        margin-top: -5px;
+        font-size: 13px;
+    }
+
+    .headspace2{
+        margin-left: -26em;
+        margin-right: -1em;
+        margin-top: -5px;
+        font-size: 13px;
+    }
+
+    .headspace{
+        margin-top: -5px;
+        font-size: 13px;
+        margin-left: -30px;
+    }
+
+    .home{
+        display: none;
+    }
+
+    .App-logo1{
+        height: 10vmin;
+        pointer-events: none;
+        margin-left: 1em;
+    }
+    .App-logo4{
+      height: 10vmin;
+      pointer-events: none;
+      margin-left: 0em;
+    }
+    .App-logo2{
+        height: 8vmin;
+        pointer-events: none;
+        margin-left: 1em;
+        right: 10px;
+    }
+
+    .Header {
+        background: transparent;
+        backdrop-filter: blur(80px);
+        height: 4em;
+        font-weight:bolder;
+        font-size:1em;
+        text-align:left;
+        display: flex;
+        align-items: center;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        position: sticky;
+        top: 0;
+        z-index: 9;
+      }
+      .dHeader {
+        background: #010921;
+        backdrop-filter: blur(80px);
+        height: 4em;
+        font-weight:bolder;
+        font-size:1em;
+        text-align:left;
+        display: flex;
+        align-items: center;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        position: sticky;
+        top: 0;
+        z-index: 9;
+      }
+  }

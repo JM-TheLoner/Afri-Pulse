@@ -1,0 +1,818 @@
+.Request{
+    background-color: rgb(255, 212, 212);
+min-height: 90vmin;
+align-items: center;
+justify-content: center;
+padding-bottom: 10px;
+display: flex;
+}
+
+.reqwrapper{
+    margin-top: 1em;
+    width: 45em;
+    background: transparent;
+    border-radius: 50px;
+    height: fit-content;
+    backdrop-filter: blur(20px);
+    border: 1px solid rgb(155, 155, 155);
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    border-radius: 50px;
+    background-image: linear-gradient(to bottom right, rgb(255, 216, 216), rgb(255, 157, 165), rgb(255, 0, 0));
+    padding-bottom: 20px;
+}
+
+.reqtitle{
+    text-align: center;
+    cursor: default;
+    font-size: 2.5em;
+    font-weight: 700;
+    padding-bottom: 20px;
+    color:rgb(255, 241, 241);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+.dreqtitle{
+text-align: center;
+font-size: 2.3em;
+font-weight: 700;
+color: #b8b8b8;
+cursor: default;
+margin-top: -1em;
+margin-bottom: 1em;
+}
+
+.inputBoxbloodreq{
+width: 100%;
+height: 60px;
+margin-top: 5px;
+position: relative;
+}
+
+.inputBoxbloodreq select{
+background-color:#dddddd;
+margin-left: 10px;
+width: 95%;
+height: 3em;
+background: #dddddd ;
+border: 2px solid gray;
+border-radius: 05px;
+padding: 20px 40px 20px 20px;
+font-size: 20px;
+font-weight: 600;
+justify-content: center;
+margin-left: 10px;
+color: #000000;
+}
+.inputBoxbloodreq option{
+background-color:#dddddd;
+border: 2px solid gray;
+padding-left: 10px;
+border-radius: 40px;
+margin-left: 10px;
+width: 95%;
+height: 1em;
+font-weight: 600;
+justify-content: center;
+margin-bottom: 0.3em;
+color: #000000;
+font-size: 15px;
+}
+
+.inputBoxbloodreq input::placeholder{
+color:rgb(114, 109, 109)
+}
+.inputBoxbloodreq select :hover,
+.inputBoxbloodreq select :focus{
+background-color:#c9c9c9
+}
+
+.inputBoxbloodreqred{
+width: 100%;
+height: 60px;
+margin-top: 5px;
+position: relative;
+}
+
+.inputBoxbloodreqred select{
+background-color:#dddddd;
+margin-left: 10px;
+width: 95%;
+height: 3em;
+background: #dddddd ;
+border: 2px solid gray;
+border-radius: 05px;
+padding: 20px 40px 20px 20px;
+font-size: 20px;
+font-weight: 600;
+justify-content: center;
+margin-left: 10px;
+color: #000000;
+box-shadow: 0 0 10px #ff0000;
+}
+.inputBoxbloodreqred option{
+background-color:#dddddd;
+border: 2px solid gray;
+padding-left: 10px;
+border-radius: 40px;
+margin-left: 10px;
+width: 95%;
+height: 1em;
+font-weight: 600;
+justify-content: center;
+margin-bottom: 0.3em;
+color: #000000;
+font-size: 15px;
+}
+
+.inputBoxbloodreqred select :hover,
+.inputBoxbloodreqred select :focus{
+background-color:#c9c9c9
+}
+
+.inputBoxrhesusreq{
+    width: 100%;
+    height: 60px;
+    margin-top: 5px;
+    position: relative;
+    }            
+
+.inputBoxrhesusreq select{
+    background-color:#dddddd;
+    margin-left: 10px;
+    width: 95%;
+    height: 3em;
+    background: #dddddd ;
+    border: 2px solid gray;
+    border-radius: 05px;
+    padding: 20px 40px 20px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    justify-content: center;
+    margin-left: 10px;
+    color: #000000;
+}
+.inputBoxrhesusreq option{
+    background-color:#dddddd;
+    border: 2px solid gray;
+    padding-left: 10px;
+    border-radius: 40px;
+    margin-left: 10px;
+    width: 95%;
+    height: 1em;
+    font-weight: 600;
+    justify-content: center;
+    margin-bottom: 0.3em;
+    color: #000000;
+    font-size: 15px;
+}
+
+.inputBoxrhesusreq :hover,
+.inputBoxrhesusreq :focus{
+    background-color:#c9c9c9
+    }
+
+.inputBoxrhesusreqred{
+width: 100%;
+height: 60px;
+margin-top: 5px;
+position: relative;
+}
+
+.inputBoxrhesusreqred select{
+    background-color:#dddddd;
+    margin-left: 10px;
+    width: 95%;
+    height: 3em;
+    background: #dddddd ;
+    border: 2px solid gray;
+    border-radius: 05px;
+    padding: 20px 40px 20px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    justify-content: center;
+    margin-left: 10px;
+    color: #000000;
+    box-shadow: 0 0 10px #ff0000;
+}
+.inputBoxrhesusreqred option{
+    background-color:#dddddd;
+    border: 2px solid gray;
+    padding-left: 10px;
+    border-radius: 40px;
+    margin-left: 10px;
+    width: 95%;
+    height: 1em;
+    font-weight: 600;
+    justify-content: center;
+    margin-bottom: 0.3em;
+    color: #000000;
+    font-size: 15px;
+}
+
+.inputBoxrhesusreqred select :hover,
+.inputBoxrhesusreqred select :focus{
+    background-color:#c9c9c9
+    }
+
+    .inputBoxgenoreq{
+        width: 100%;
+        height: 60px;
+        margin-top: 5px;
+        position: relative;
+        }
+        
+        .inputBoxgenoreq select{
+            background-color:#dddddd;
+            margin-left: 10px;
+            width: 95%;
+            height: 3em;
+            background: #dddddd ;
+            border: 2px solid gray;
+            border-radius: 05px;
+            padding: 20px 40px 20px 20px;
+            font-size: 20px;
+            font-weight: 600;
+            justify-content: center;
+            margin-left: 10px;
+            color: #000000;
+        }
+        .inputBoxgenoreq option{
+            background-color:#dddddd;
+            border: 2px solid gray;
+            padding-left: 10px;
+            border-radius: 40px;
+            margin-left: 10px;
+            width: 95%;
+            height: 1em;
+            font-weight: 600;
+            justify-content: center;
+            margin-bottom: 0.3em;
+            color: #000000;
+            font-size: 15px;
+        }
+        
+        .inputBoxgenoreq input::placeholder{
+            color:rgb(155, 155, 155)
+            }
+    .inputBoxgenoreq :hover,
+    .inputBoxgenoreq :focus{
+        background-color:#c9c9c9
+        }
+    
+        .inputBoxgenderreq{
+            width: 100%;
+            height: 60px;
+            margin-top: 5px;
+            position: relative;
+            }
+            
+            .inputBoxgenderreq select{
+                background-color:#dddddd;
+                margin-left: 10px;
+                width: 95%;
+                height: 3em;
+                background: #dddddd ;
+                border: 2px solid gray;
+                border-radius: 05px;
+                padding: 20px 40px 20px 20px;
+                font-size: 20px;
+                font-weight: 600;
+                justify-content: center;
+                margin-left: 10px;
+                color: #000000;
+            }
+            .inputBoxgenderreq option{
+                background-color:#dddddd;
+                border: 2px solid gray;
+                padding-left: 10px;
+                border-radius: 40px;
+                margin-left: 10px;
+                width: 95%;
+                height: 1em;
+                font-weight: 600;
+                justify-content: center;
+                margin-bottom: 0.3em;
+                color: #000000;
+                font-size: 15px;
+            }
+            
+            .inputBoxgenderreq input::placeholder{
+                color:rgb(155, 155, 155)
+                }
+        .inputBoxgenderreq :hover,
+        .inputBoxgenderreq :focus{
+            background-color:#c9c9c9
+            }
+        .inputBoxgenderreqred{
+            width: 100%;
+            height: 60px;
+            margin-top: 5px;
+            position: relative;
+            }
+            
+            .inputBoxgenderreqred select{
+                background-color:#dddddd;
+                margin-left: 10px;
+                width: 95%;
+                height: 3em;
+                background: #dddddd ;
+                border: 2px solid gray;
+                border-radius: 05px;
+                padding: 20px 40px 20px 20px;
+                font-size: 20px;
+                font-weight: 600;
+                justify-content: center;
+                margin-left: 10px;
+                color: #000000;
+            }
+            .inputBoxgenderreqred option{
+                background-color:#dddddd;
+                border: 2px solid gray;
+                padding-left: 10px;
+                border-radius: 40px;
+                margin-left: 10px;
+                width: 95%;
+                height: 1em;
+                font-weight: 600;
+                justify-content: center;
+                margin-bottom: 0.3em;
+                color: #000000;
+                font-size: 15px;
+            }
+            
+            .inputBoxgenderreqred input::placeholder{
+                color:rgb(155, 155, 155)
+                }
+        .inputBoxgenderreqred :hover,
+        .inputBoxgenderreqred :focus{
+            background-color:#c9c9c9
+            }
+            
+            .inputBoxgenoreqred{
+                width: 100%;
+                height: 60px;
+                margin-top: 5px;
+                position: relative;
+            }
+            
+            .inputBoxgenoreqred select{
+                background-color:#dddddd;
+                margin-left: 10px;
+                width: 95%;
+                height: 3em;
+                background: #dddddd ;
+                border: 2px solid gray;
+                border-radius: 05px;
+                padding: 20px 40px 20px 20px;
+                font-size: 20px;
+                font-weight: 600;
+                justify-content: center;
+                margin-left: 10px;
+                color: #000000;
+            box-shadow: 0 0 10px #ff0000;
+            }
+            .inputBoxgenoreqred option{
+                background-color:#dddddd;
+                border: 2px solid gray;
+                padding-left: 10px;
+                border-radius: 40px;
+                margin-left: 10px;
+                width: 95%;
+                height: 1em;
+                font-weight: 600;
+                justify-content: center;
+                margin-bottom: 0.3em;
+                color: #000000;
+                font-size: 15px;
+            }
+            
+            .inputBoxgenoreqred ::placeholder{
+                color:rgb(155, 155, 155)
+                }
+                
+            .inputBoxgenoreqred :hover,
+            .inputBoxgenoreqred :focus{
+                background-color:#c9c9c9
+                }
+        
+                .inputBoxdatereq{
+                    width: 100%;
+                    height: 60px;
+                    margin-top: 5px;
+                    position: relative;
+                    }
+                
+                    .inputBoxdatereq input{
+                        margin-left: 10px;
+                        width: 95%;
+                        height: 3em;
+                        background: #dddddd ;
+                        border: 2px solid gray;
+                        border-radius: 05px;
+                        padding: 20px 40px 20px 20px;
+                        font-size: 20px;
+                        font-weight: 600;
+                        justify-content: center;
+                        margin-bottom: 0.3em;
+                
+                    }
+                    
+                    .inputBoxdatereq input::placeholder{
+                    color:rgb(155, 155, 155)
+                    }
+                    .inputBoxdatereq :hover,
+                    .inputBoxdatereq :focus{
+                        background-color:#c9c9c9
+                        }
+                    .inputBoxdatereqred :hover,
+                    .inputBoxdatereqred :focus{
+                    background-color:#c9c9c9
+                    }
+            
+                    .inputBoxdatereqred input::placeholder{
+                    color:rgb(155, 155, 155)
+                    }
+                
+                    .inputBoxdatereqred{
+                        width: 100%;
+                        height: 60px;
+                        margin-top: 5px;
+                        position: relative;
+                    }
+                
+                    .inputBoxdatereqred input{
+                        margin-left: 10px;
+                        width: 95%;
+                        height: 3em;
+                        background: #dddddd ;
+                        border: 2px solid gray;
+                        border-radius: 05px;
+                        padding: 20px 40px 20px 20px;
+                        font-size: 20px;
+                        font-weight: 600;
+                        justify-content: center;
+                        margin-bottom: 0.3em;
+                    box-shadow: 0 0 10px #ff0000;
+                    }
+                    
+                    .inputBoxtattxtreq{
+                        width: 100%;
+                        height: 60px;
+                        margin-top: 5px;
+                        margin-bottom: 5px;
+                        position: relative;
+                        }
+                    .inputBoxtattxtreq input{
+                        margin-left: 10px;
+                        width: 95%;
+                        height: 3em;
+                        background: #dddddd ;
+                        border: 2px solid gray;
+                        border-radius: 05px;
+                        padding: 20px 40px 20px 20px;
+                        font-size: 20px;
+                        font-weight: 600;
+                        justify-content: center;
+                    }
+                    .inputBoxtattxtreq input::placeholder{
+                        color:rgb(155, 155, 155)
+                    }
+                    .inputBoxtattxtreq input:hover,
+                    .inputBoxtattxtreq input:focus{
+                    background-color: #c9c9c9;
+                    }    
+
+                    .inputBoxlocsreq{
+                        width: 100%;
+                        height: 60px;
+                        margin-top: 5px;
+                        position: relative;
+                        }
+                        
+                        .inputBoxlocsreq select{
+                            background-color:#dddddd;
+                            margin-left: 10px;
+                            width: 95%;
+                            height: 3em;
+                            background: #dddddd ;
+                            border: 2px solid gray;
+                            border-radius: 05px;
+                            padding: 20px 40px 20px 20px;
+                            font-size: 20px;
+                            font-weight: 600;
+                            justify-content: center;
+                            margin-left: 10px;
+                            color: #000000;
+                        }
+                        .inputBoxlocsreq option{
+                            background-color:#dddddd;
+                            border: 2px solid gray;
+                            padding-left: 10px;
+                            border-radius: 40px;
+                            margin-left: 10px;
+                            width: 95%;
+                            height: 1em;
+                            font-weight: 600;
+                            justify-content: center;
+                            margin-bottom: 0.3em;
+                            color: #000000;
+                            font-size: 15px;
+                        }
+                        
+                        .inputBoxlocsreq input::placeholder{
+                            color:rgb(155, 155, 155)
+                            }
+                    .inputBoxlocsreq :hover,
+                    .inputBoxlocsreq :focus{
+                        background-color:#c9c9c9
+                        }
+                    .inputBoxlocsreqred{
+                        width: 100%;
+                        height: 60px;
+                        margin-top: 5px;
+                        position: relative;
+                        }
+                        
+                        .inputBoxlocsreqred select{
+                            background-color:#dddddd;
+                            margin-left: 10px;
+                            width: 95%;
+                            height: 3em;
+                            background: #dddddd ;
+                            border: 2px solid gray;
+                            border-radius: 05px;
+                            padding: 20px 40px 20px 20px;
+                            font-size: 20px;
+                            font-weight: 600;
+                            justify-content: center;
+                            margin-left: 10px;
+                            color: #000000;
+                        }
+                        .inputBoxlocsreqred option{
+                            background-color:#dddddd;
+                            border: 2px solid gray;
+                            padding-left: 10px;
+                            border-radius: 40px;
+                            margin-left: 10px;
+                            width: 95%;
+                            height: 1em;
+                            font-weight: 600;
+                            justify-content: center;
+                            margin-bottom: 0.3em;
+                            color: #000000;
+                            font-size: 15px;
+                        }
+                        
+                        .inputBoxlocsreqred input::placeholder{
+                            color:rgb(155, 155, 155)
+                            }
+                    .inputBoxlocsreqred :hover,
+                    .inputBoxlocsreqred :focus{
+                        background-color:#c9c9c9
+                        }
+
+                        .inputBoxPregreq{
+                            margin-top: 5px;
+                            margin-left: 30px;
+                        }
+                        
+                        .inputBoxPregreq input[type="checkbox"]{
+                            display: inline-block;
+                            width: 20px;
+                            height: 20px;
+                            background: white left top no-repeat;
+                            border: 1px solid #ccc;
+                            cursor: pointer;
+                            color: #ff0000;
+                        }
+                        .inputBoxPregreq input[type="checkbox"]:checked{
+                            background: #d9534f -19px top no-repeat;
+                        }
+                        .inputBoxPregreq input[type="checkbox"]{
+                            margin-right: 4px;
+                        }
+                        
+                        .inputBoxtatreq{
+                            margin-top: 5px;
+                            margin-left: 30px;
+                        }
+                        
+                        .inputBoxtatreq input[type="checkbox"]{
+                            display: inline-block;
+                            width: 20px;
+                            height: 20px;
+                            background: white left top no-repeat;
+                            border: 1px solid #ccc;
+                            cursor: pointer;
+                        }
+                        .inputBoxtatreq input[type="checkbox"]:checked{
+                            background: #d9534f -19px top no-repeat;
+                        }
+                        .inputBoxtatreq input[type="checkbox"]{
+                            margin-right: 4px;
+                        }
+                        .inputBoxhistreq{
+                            margin-top: 5px;
+                            margin-left: 30px;
+                        }
+                        
+                        .inputBoxhistreq input[type="checkbox"]{
+                            display: inline-block;
+                            width: 20px;
+                            height: 20px;
+                            background: white left top no-repeat;
+                            border: 1px solid #ccc;
+                            cursor: pointer;
+                        }
+                        .inputBoxhistreq input[type="checkbox"]:checked{
+                            background: #d9534f -19px top no-repeat;
+                        }
+                        .inputBoxhistreq input[type="checkbox"]{
+                            margin-right: 4px;
+                        }
+                        
+                        .inputBoxPregtxtreq{
+                            width: 100%;
+                            height: 60px;
+                            margin-top: 5px;
+                            margin-bottom: 5px;
+                            position: relative;
+                            }
+                        .inputBoxPregtxtreq input{
+                            margin-left: 10px;
+                            width: 95%;
+                            height: 3em;
+                            background: #dddddd ;
+                            border: 2px solid gray;
+                            border-radius: 05px;
+                            padding: 20px 40px 20px 20px;
+                            font-size: 20px;
+                            font-weight: 600;
+                            justify-content: center;
+                        }
+                        .inputBoxPregtxtreq input::placeholder{
+                            color:rgb(155, 155, 155)
+                        }
+                        .inputBoxPregtxtreq input:hover,
+                        .inputBoxPregtxtreq input:focus{
+                        background-color: #c9c9c9;
+                        }
+                        
+                        .inputBoxhistoryreq{
+                            width: 100%;
+                            height: 16em;
+                            margin-top: 5px;
+                            margin-bottom: 5px;
+                            position: relative;
+                            }
+                            .inputBoxhistoryreq textarea{
+                                margin-left: 10px;
+                                width: 95%;
+                                height: 13em;
+                                background: #dddddd ;
+                                border: 2px solid gray;
+                                border-radius: 05px;
+                                padding: 20px 40px 20px 20px;
+                                font-size: 20px;
+                                font-weight: 600;
+                                justify-content: center;
+                                overflow-wrap: break-word;
+                                resize: none;
+                            }
+                            .inputBoxhistoryreq textarea::placeholder{  
+                                color:rgb(170, 170, 170);
+                                font-size: 20px;
+                                }
+                            
+                                .inputBoxhistoryreq textarea:hover,
+                                .inputBoxhistoryreq textarea:focus{
+                                    background-color: #c9c9c9;
+                                } 
+                                
+                            .inputBoxhistoryreqred{
+                                width: 96.5%;
+                                margin-top: 0px;
+                                position: relative;
+                                margin-left: 10px;
+                                margin-bottom: 10px;
+                            }
+                            .inputBoxhistoryreqred textarea{
+                                width: 100%;
+                                height: 13em;
+                                border: 3px solid gray;
+                                border-radius: 05px;
+                                padding: 10px 10px 10px 10px;
+                                font-size: 20px;
+                                font-weight: 600;
+                                background: #dddddd;
+                                overflow-wrap: break-word;
+                                resize: none;
+                                box-shadow: 0 0 10px #ff0000;
+                            }
+                            .inputBoxhistoryreqred textarea::placeholder{
+                                color:rgb(170, 170, 170);
+                                font-size: 20px;
+                                }
+                        
+                                .inputBoxhistoryreqred textarea:hover,
+                                .inputBoxhistoryreqred textarea:focus{
+                                    background-color: #c9c9c9;
+                                }            
+                                                
+.goreqbtn{
+    position: relative; top:20px; left:230px;
+    margin-bottom: 20px;
+    width: 33%;
+    height: 55px;
+    background: #b9b9b9;
+    border-radius: 05px;
+    box-shadow: 0 0 10px rgb(29, 29, 29);
+    cursor: pointer;
+    color: #000000;
+    font-weight: 700;
+    font-size:30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 100ms ease-in-out 100ms;
+    }
+    .goreqbtn:hover,
+    .goreqbtn:focus{
+    background-color: #ff0000;
+    }
+
+.genTextreq{    
+color: rgb(48, 48, 48);
+margin-left: 25px;
+font-size:20px;
+font-weight: 500;
+}
+.weightTextreq{
+position: relative;
+color: rgb(48, 48, 48);
+margin-left: 25px;
+font-size:20px;
+font-weight: 500;
+}
+.bloodTextreq{
+position: relative;
+color: rgb(48, 48, 48);
+margin-left: 25px;
+font-size:20px;
+font-weight: 500;
+}
+.rhesusTextreq{
+position: relative;
+color: rgb(48, 48, 48);
+margin-left: 25px;
+font-size:20px;
+font-weight: 500;
+}
+.genoTextreq{
+position: relative;
+color: rgb(48, 48, 48);
+margin-left: 25px;
+font-size:20px;
+font-weight: 500;
+}
+.dateTextreq{
+position: relative;
+color: rgb(48, 48, 48);
+margin-left: 25px;
+font-size:20px;
+font-weight: 500;
+}
+.locsTextreq{
+position: relative;
+color: rgb(48, 48, 48);
+margin-left: 25px;
+font-size:20px;
+font-weight: 500;
+}
+.pregTextreq{
+position: relative; top:27px ; left:40px;
+color: rgb(48, 48, 48);
+margin-left: 25px;
+font-size:20px;
+font-weight: 500;
+}
+.tatTextreq{
+position: relative; top:27px ; left:40px;
+color: rgb(48, 48, 48);
+margin-left: 25px;
+font-size:20px;
+font-weight: 500;
+}
+.histTextreq{
+position: relative; top:27px ; left:40px;
+color: rgb(48, 48, 48);
+margin-left: 25px;
+font-size:20px;
+font-weight: 500;
+}
+.subsTextreq{
+position: relative;
+color: rgb(48, 48, 48);
+text-align: center;
+margin-top: 20px;
+margin-bottom: 20px;
+font-size:20px;
+font-weight: 500;
+}            

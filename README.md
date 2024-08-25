@@ -9,7 +9,7 @@ Contains HTML and CSS
 
 If you download this code, run "npm i" in your terminal. this installs all the dependencies used in production
 
-[ <img src="https://cdn.gomix.com/2bdfb3f8-05ef-4035-a06e-2043962a3a13%2Fremix-button.svg" width="163px" />](https://glitch.com/edit/#!/import/github/JM-TheLoner/opalconBackend)
+[ <img src="https://cdn.gomix.com/2bdfb3f8-05ef-4035-a06e-2043962a3a13%2Fremix-button.svg" width="163px" />](https://glitch.com/edit/#!/import/github/JM-TheLoner/Afri-Pulse)
 
 
 # Getting Started with Create React App

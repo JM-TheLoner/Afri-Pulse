@@ -4,7 +4,7 @@ Frontend Template
 
 **Description:**
 
-Made up of Javascript, HTML and CSS using 
+Made up of Javascript, HTML and CSS using react
 
 If you download this code, run "npm i" in your terminal. this installs all the dependencies used in production
 

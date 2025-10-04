@@ -10,7 +10,7 @@ import bloodhand from './bloodhand.png'
 
 const Home = () => {
 
-  const { navigate, locationDataobj, dark } = useContext(DataContext)
+  const { navigate, locationDataobj } = useContext(DataContext)
 
   useEffect(()=>{
     window.scrollTo(0,0)
@@ -37,11 +37,8 @@ const Home = () => {
   const locationslength = Object.keys(locationDataobj).length
 
   return (
-    <div className='Home' style={{
-      // backgroundImage:`url(${bg})`,
-      // backgroundSize:'cover'
-    }}>
-      <div className='backgroundspread'>
+    <div className='Home'>
+      {/* <div className='backgroundspread'>
         <div className='wave4'>
           <div className='bg4'></div>
         </div>
@@ -60,7 +57,7 @@ const Home = () => {
         <div className='wave1'>
           <div className='bg1'></div>
         </div>
-      </div>
+      </div>*/}
       <div className='spliting'>
         <div className='leftside'>
           <h1 className='TopLine'>A drop of blood for you could be a drop of life for someone else</h1>

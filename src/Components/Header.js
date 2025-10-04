@@ -13,18 +13,12 @@ import stat from './stats.png'
 
 const Header = () => {
 
-  const { loggedIn, setaccessKey, setuser, setloggedIn, dark, setdark, navigate, setanalysis } = useContext(DataContext)
+  const { loggedIn, setaccessKey, setuser, setloggedIn, navigate, setanalysis } = useContext(DataContext)
 
   const[visibility, setvisibility] = useState(false)
 
   const handlevisibility = () =>{
     setvisibility(!visibility)
-  }
-
-  const darkmode = async (e) => {
-    e.preventDefault()
-    await localStorage.setItem('darkMode', !dark)
-    await setdark(JSON.parse(localStorage.getItem('darkMode')))
   }
 
   const handleLogout = async () => {
@@ -77,11 +71,10 @@ const linkstyle = {
 
 if (!loggedIn){
   return (      
-    <header className={!dark ? 'Header' : 'dHeader'}>
+    <header className='Header'  >
         <div className='Topbar'>
             <img src={logo} className="App-logo2" alt="logo"/>
             <p className='headbtnlinetwo'>AfriPulseHub Blood Works</p>
-            <button  className={!dark ? 'btn' : 'dbtn'} onClick={(e) => {darkmode(e)}}>Dark Mode</button>
         </div>        
         <div className={visibility === true ? 'links' : 'linksclosed'}>
             <div className='Navbar'>
@@ -120,12 +113,11 @@ if (!loggedIn){
 
 if (loggedIn){
   return (
-    <header className={!dark ? 'Header' : 'dHeader'}>
+    <header className='Header'>
         <div className='Topbar'>
             <img src={logo} className="App-logo2" alt="logo"/>
             <p className='headbtnlinetwo'>AfriPulseHub Blood Works</p>
             <button className='logoutbutton' onClick={() => {handleLogout()}}>Logout</button>
-            <button  className='btnlogged' onClick={(e) => {darkmode(e)}}>Dark Mode</button>
         </div>        
         <div className={visibility === true ? 'links' : 'linksclosed'}>
             <div className='Navbar'>

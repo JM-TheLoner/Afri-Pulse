@@ -3,7 +3,7 @@ import '../Stylesheets/Background.css'
 import { useEffect, useContext } from 'react'
 import { PieChart, Pie, Tooltip, Cell, Label } from 'recharts'
 import DataContext from '../Context/DataContext'
-import danceblood from './Untitled17_20240329172633.png'
+import danceblood from '../Assets/Untitled17_20240329172633.png'
 
 
 const Dash = () => {

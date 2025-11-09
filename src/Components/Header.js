@@ -3,7 +3,7 @@ import '../Stylesheets/Header.css'
 import { Link } from 'react-router-dom';
 import DataContext from '../Context/DataContext'
 import { useContext, useState } from 'react'
-import logo from './logo.png'
+import logo from '../Assets/logo.png'
 import cont from '../Assets/contact.png'
 import abo from '../Assets/about.png'
 import quest from '../Assets/faq.png'

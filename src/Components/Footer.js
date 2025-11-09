@@ -5,10 +5,10 @@ const Footer = () => {
 
   return (  
     <>
-      <footer className={!dark ? 'Footer' : 'dFooter'}>
+      <footer className={'Footer'}>
         <ul className='FootSpace3'>
             <a
-            className={!dark ? "App-link" : "dApp-link"}
+            className={"App-link"}
             href="https://github.com/dashboard"
             target="_blank"
             rel="noopener noreferrer"
@@ -23,8 +23,8 @@ const Footer = () => {
           <li><Link to={'/contact'}>Phone Number</Link></li>
           <li><Link to={'/contact'}>Email</Link></li>
         </ul>
-        <div className={!dark ? 'Footertext' : 'dFootertext'}>
-          <h5 className={!dark ? 'FooterCopyright' : 'dFooterCopyright'}>&copy; 2023 - Powered By let me cook</h5>
+        <div className={'Footertext'}>
+          <h5 className={'FooterCopyright'}>&copy; 2023 - Powered By let me cook</h5>
         </div>
       </footer>
     </>

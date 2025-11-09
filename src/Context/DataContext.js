@@ -1,4 +1,4 @@
-import { useState, createContext, useEffect } from 'react' 
+import { useState, createContext } from 'react' 
 import { useNavigate } from 'react-router-dom'
 
 const DataContext = createContext()
@@ -8,11 +8,17 @@ export const DataProvider = ({ children }) => {
     const navigate = useNavigate()
     const [status, setstatus] = useState('')
     const [ analysis, setanalysis ] = useState('General')
+    const[visibility, setvisibility] = useState(false)
 
     const handleRefresh = () => {
       console.log('refresh')
       navigate('/')
     }
+
+  const handlevisibility = () =>{
+    setvisibility(!visibility)
+  }
+
     let locationDataobj = [
       {name : 'Lagos', donatedamount : 36293, donors : 134, recipientamount : 23013, recipients : 91, address: 'loremipsum loremipsum'},
       {name : 'Lagos', donatedamount : 34293, donors : 534, recipientamount : 23613, recipients : 94, address: 'loremipsum lorem'},
@@ -35,7 +41,7 @@ export const DataProvider = ({ children }) => {
     ]
   
     return (
-        <DataContext.Provider value={{ status, setstatus, navigate, handleRefresh, analysis, setanalysis, locationDataobj }}>
+        <DataContext.Provider value={{ visibility, setvisibility, handlevisibility, status, setstatus, navigate, handleRefresh, analysis, setanalysis, locationDataobj }}>
         {children}
         </DataContext.Provider>
     )

@@ -2,7 +2,7 @@ import React from 'react'
 import '../Stylesheets/Header.css'
 import { Link } from 'react-router-dom';
 import DataContext from '../Context/DataContext'
-import { useContext, useState } from 'react'
+import { useContext } from 'react'
 import logo from '../Assets/logo.png'
 import cont from '../Assets/contact.png'
 import abo from '../Assets/about.png'
@@ -11,13 +11,7 @@ import house from '../Assets/home.png'
 
 const Header = () => {
 
-  const { navigate, } = useContext(DataContext)
-
-  const[visibility, setvisibility] = useState(false)
-
-  const handlevisibility = () =>{
-    setvisibility(!visibility)
-  }
+  const { visibility, handlevisibility, setvisibility, navigate } = useContext(DataContext)
 
     const navhome = (e) =>{            
         navigate('/')

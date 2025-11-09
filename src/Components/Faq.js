@@ -4,6 +4,8 @@ import DataContext from '../Context/DataContext'
 import { useContext, useState } from 'react'
 
 const Faq = () => {
+  
+  const { setvisibility } = useContext(DataContext)
 
   const [open1, setopen1] = useState(false)
   const [open2, setopen2] = useState(false)
@@ -25,7 +27,7 @@ const Faq = () => {
 
 
   return (
-    <div className='Faq'>
+    <div className='Faq' onClick={setvisibility(false)}>
       <div className='backgroundspread'>
         <div className='wave4'>
           <div className='bg4'></div>
@@ -46,13 +48,13 @@ const Faq = () => {
           <div className='bg1'></div>
         </div>
       </div>
-      <h1 className={!dark ? 'faqhead' : 'dfaqhead'}>Frequently Asked Questions</h1>
-      <h1 className={!dark ? 'faqdesc' : 'dfaqdesc'}>Dispel your doubts related to blood, donations and Afripulse</h1>
+      <h1 className={'faqhead'}>Frequently Asked Questions</h1>
+      <h1 className={'faqdesc'}>Dispel your doubts related to blood, donations and Afripulse</h1>
       <div className='questionwrapper'>
         <ul>
           <div className='qnawrap'>
             <li>  
-              <p className={!dark ? 'question' : 'dquestion'} >Who can donate blood<button type='submit' className={!open1 ? 'ansbutton1' : 'ansbuttonopen1'}  onClick={(e)=>changeit(e, open1, setopen1)}>^</button></p>
+              <p className={'question'} >Who can donate blood<button type='submit' className={!open1 ? 'ansbutton1' : 'ansbuttonopen1'}  onClick={(e)=>changeit(e, open1, setopen1)}>^</button></p>
               
               <p className={open1 ? 'answer1' : 'nanswer1'} >
                 Most people can give blood if they are in good health, if you are aged between 18 and 65 and weigh at least 50 kg. You cannot donate if you have a cold, flu, sore throat, cold sore, stomach bug or any other infection. If you have recently had a tattoo or body piercing you cannot donate for 6 months from the date of the procedure. If you have visited the dentist for a minor procedure you must wait 24 hours before donating. A test will be administered at the donation site.
@@ -62,7 +64,7 @@ const Faq = () => {
           </div>   
           <div className='qnawrap'>
             <li>
-              <p className={!dark ? 'question' : 'dquestion'} >How long do i wait after donating to donate again<button type='submit' className={!open2 ? 'ansbutton2' : 'ansbuttonopen2'}  onClick={(e)=>changeit(e, open2, setopen2)}>^</button></p>              
+              <p className={'question'} >How long do i wait after donating to donate again<button type='submit' className={!open2 ? 'ansbutton2' : 'ansbuttonopen2'}  onClick={(e)=>changeit(e, open2, setopen2)}>^</button></p>              
               <p className={open2 ? 'answer2' : 'nanswer2'} >
                 <p>How often can I donate blood? You must wait at least eight weeks (56 days) between donations of whole blood and 16 weeks (112 days) between Power Red donations. Whole blood donors can donate up to 6 times a year. Platelet apheresis donors may give every 7 days up to 24 times per year.</p>
                 <p>You must wait a minimum of 56 days between whole blood donations. You must wait at least 7 days after donating blood before you can donate platelets. After an automated double red cell collection, you must wait 112 days before donating again.</p>
@@ -73,7 +75,7 @@ const Faq = () => {
           </div>
           <div className='qnawrap'>     
             <li>
-              <p className={!dark ? 'question' : 'dquestion'} >what are the precautions to take before donation<button type='submit' className={!open3 ? 'ansbutton3' : 'ansbuttonopen3'}  onClick={(e)=>changeit(e, open3, setopen3)}>^</button></p>              
+              <p className={'question'} >what are the precautions to take before donation<button type='submit' className={!open3 ? 'ansbutton3' : 'ansbuttonopen3'}  onClick={(e)=>changeit(e, open3, setopen3)}>^</button></p>              
               <p className={open3 ? 'answer3' : 'nanswer3'} >
                 <p className='instructcontent'>- Drink plenty of water. Before you donate, drink at least 16 ounces of water for the best blood donation experience. </p>
                 <p className='instructcontent'>-  Avoid foods high in fat, like fries or ice cream. Donating blood can make your iron level drop—you can prepare your body by eating foods rich in iron and vitamin C before you donate.</p>
@@ -86,7 +88,7 @@ const Faq = () => {
           </div>
           <div className='qnawrap'>     
             <li>
-              <p className={!dark ? 'question' : 'dquestion'} >What should i do after donating blood<button type='submit' className={!open4 ? 'ansbutton4' : 'ansbuttonopen4'}  onClick={(e)=>changeit(e, open4, setopen4)}>^</button></p>              
+              <p className={'question'} >What should i do after donating blood<button type='submit' className={!open4 ? 'ansbutton4' : 'ansbuttonopen4'}  onClick={(e)=>changeit(e, open4, setopen4)}>^</button></p>              
               <p className={open4 ? 'answer4' : 'nanswer4'} >
                 <p className='instructcontent'>- keep the pressure dressing on your arm for about 30 minutes after you have given blood, and the plaster on for 6 hours</p>
                 <p className='instructcontent'>- Drink plenty of water to rehydrate</p>
@@ -100,7 +102,7 @@ const Faq = () => {
           </div> 
           <div className='qnawrap'>     
             <li>
-              <p className={!dark ? 'question' : 'dquestion'} >What are the restrictions on blood donation<button type='submit' className={!open5 ? 'ansbutton5' : 'ansbuttonopen5'}  onClick={(e)=>changeit(e, open5, setopen5)}>^</button></p>              
+              <p className={'question'} >What are the restrictions on blood donation<button type='submit' className={!open5 ? 'ansbutton5' : 'ansbuttonopen5'}  onClick={(e)=>changeit(e, open5, setopen5)}>^</button></p>              
               <p className={open5 ? 'answer5' : 'nanswer5'} >
                 <p className='instructcontent'>The following qualities may disqualify you from donating blood: </p>
                 <p className='instructcontent'>- Have ever had a positive test for HIV/AIDS or Have ever injected recreational drugs.</p>
@@ -113,7 +115,7 @@ const Faq = () => {
           </div> 
           <div className='qnawrap'>   
             <li>
-              <p className={!dark ? 'question' : 'dquestion'} >What does it mean to have a rare blood type<button type='submit' className={!open6 ? 'ansbutton6' : 'ansbuttonopen6'}  onClick={(e)=>changeit(e, open6, setopen6)}>^</button></p>              
+              <p className={'question'} >What does it mean to have a rare blood type<button type='submit' className={!open6 ? 'ansbutton6' : 'ansbuttonopen6'}  onClick={(e)=>changeit(e, open6, setopen6)}>^</button></p>              
               <p className={open6 ? 'answer6' : 'nanswer6'} >
                 Every person has an ABO and rhesus blood group: i.e. group A, B, AB, or O and RhD negative or RhD positive. Occasionally, people have an unusual, specific red cell antigen. Alternatively, some individual's red cells lack an antigen which is common to most people. This would be recognised as a “rare” blood type. Some patients have antibodies against a specific blood type and in these circumstances it may be difficult to find blood from a regular blood donor which is compatible with that of the rare type of the patient.
                 <p>For more information, click <a className='wholink' href='https://www.redcrossblood.org/donate-blood/dlp/rare-donors.html#:~:text=Rare%20Blood%20Donor&text=Your%20blood%20type%20is%20present,missing%20a%20combination%20of%20antigens.' target="_blank" rel="noopener noreferrer">Here</a></p>
@@ -122,7 +124,7 @@ const Faq = () => {
           </div>   
           <div className='qnawrap'>      
             <li> 
-              <p className={!dark ? 'question' : 'dquestion'} >What can i donate besides blood<button type='submit' className={!open7 ? 'ansbutton7' : 'ansbuttonopen7'}  onClick={(e)=>changeit(e, open7, setopen7)}>^</button></p>              
+              <p className={'question'} >What can i donate besides blood<button type='submit' className={!open7 ? 'ansbutton7' : 'ansbuttonopen7'}  onClick={(e)=>changeit(e, open7, setopen7)}>^</button></p>              
               <p className={open7 ? 'answer7' : 'nanswer7'} >
                 Blood contains several components, including red cells, platelets and plasma which can be donated individually.
                 <p className='instructcontent'>- During a whole blood donation, you typically donate a pint (about a half liter) of whole blood.</p>
@@ -135,7 +137,7 @@ const Faq = () => {
           </div>   
           <div className='qnawrap'>      
             <li> 
-              <p className={!dark ? 'question' : 'dquestion'} >What can i donate besides blood<button type='submit' className={!open7 ? 'ansbutton7' : 'ansbuttonopen7'}  onClick={(e)=>changeit(e, open7, setopen7)}>^</button></p>              
+              <p className={'question'} >What can i donate besides blood<button type='submit' className={!open7 ? 'ansbutton7' : 'ansbuttonopen7'}  onClick={(e)=>changeit(e, open7, setopen7)}>^</button></p>              
               <p className={open7 ? 'answer7' : 'nanswer7'} >
                 Blood contains several components, including red cells, platelets and plasma which can be donated individually.
                 <p className='instructcontent'>- During a whole blood donation, you typically donate a pint (about a half liter) of whole blood.</p>
@@ -148,7 +150,7 @@ const Faq = () => {
           </div>   
           <div className='qnawrap'>      
             <li> 
-              <p className={!dark ? 'question' : 'dquestion'} >What can i donate besides blood<button type='submit' className={!open7 ? 'ansbutton7' : 'ansbuttonopen7'}  onClick={(e)=>changeit(e, open7, setopen7)}>^</button></p>              
+              <p className={'question'} >What can i donate besides blood<button type='submit' className={!open7 ? 'ansbutton7' : 'ansbuttonopen7'}  onClick={(e)=>changeit(e, open7, setopen7)}>^</button></p>              
               <p className={open7 ? 'answer7' : 'nanswer7'} >
                 Blood contains several components, including red cells, platelets and plasma which can be donated individually.
                 <p className='instructcontent'>- During a whole blood donation, you typically donate a pint (about a half liter) of whole blood.</p>

@@ -6,12 +6,14 @@ import DataContext from '../Context/DataContext'
 
 const About = () => {
 
+  const { setvisibility } = useContext(DataContext)
+
   useEffect(()=>{
     window.scrollTo(0,0)
  }, [])
 
   return (
-    <div className='About'>
+    <div className='About' onClick={setvisibility(false)}>
       <div className='backgroundspread'>
         <div className='wave4'>
           <div className='bg4'></div>
@@ -33,24 +35,24 @@ const About = () => {
         </div>
       </div>
         <div className='textbox'>
-          <h1 className={!dark ? 'story' : 'dstory'}>About us</h1>
-          <p className={!dark ? 'para1' : 'dpara1'}>
+          <h1 className={'story'}>About us</h1>
+          <p className={'para1'}>
             AfriPulseHub aims to efficiently connect Donors with blood banks, recipients and hospitals while ensuring data
             safety between the donor and the recipient. We want to ensure data safety between the donor and the recipient with timely and accessible blood supply. In a nutshell,
             we aim to streamline the blood donation process as well as to foster a culture of regular donation and contributionto saving
             lives in emergent situations.
           </p>
           <img src={logo} className="aboutimage" alt="logo" />
-          <h1 className={!dark ? 'hours' : 'dhours'}>Our Mission</h1>
-          <p className={!dark ? 'para2' : 'dpara2'}>
+          <h1 className={'hours'}>Our Mission</h1>
+          <p className={'para2'}>
             AfriPulseHub aims to efficiently connect Donors with blood banks, recipients and hospitals while ensuring data
             safety between the donor and the recipient. We want to ensure data safety between the donor and the recipient with timely and accessible blood supply. In a nutshell,
             we aim to streamline the blood donation process as well as to foster a culture of regular donation and contributionto saving
             lives in emergent situations.
           </p>
-          <h1 className={!dark ? 'clientelle' : 'dclientelle'}>Our Locations</h1>    
+          <h1 className={'clientelle'}>Our Locations</h1>    
           <div className='aboutlocations'>
-            <h2 className={!dark ? 'day1' : 'dday1'}>            
+            <h2 className={'day1'}>            
               <a
                 className="abloc"
                 href="https://github.com/dashboard"
@@ -62,7 +64,7 @@ const About = () => {
                 <p className='address2'>Ipsum Lorem</p>
               </a>
             </h2>
-            <h2 className={!dark ? 'day2' : 'dday2'}>            
+            <h2 className={'day2'}>            
               <a
                 className="abloc"
                 href="https://github.com/dashboard"
@@ -74,7 +76,7 @@ const About = () => {
                 <p className='address2'>Ipsum Lorem</p>
               </a>
             </h2>
-            <h2 className={!dark ? 'day3' : 'dday3'}>            
+            <h2 className={'day3'}>            
               <a
                 className="abloc"
                 href="https://github.com/dashboard"
@@ -86,7 +88,7 @@ const About = () => {
                 <p className='address2'>Ipsum Lorem</p>
               </a>
             </h2>
-            <h2 className={!dark ? 'day4' : 'dday4'}>            
+            <h2 className={'day4'}>            
               <a
                 className="abloc"
                 href="https://github.com/dashboard"
@@ -98,7 +100,7 @@ const About = () => {
                 <p className='address2'>Ipsum Lorem</p>
               </a>
             </h2>
-            <h2 className={!dark ? 'day5' : 'dday5'}>            
+            <h2 className={'day5'}>            
               <a
                 className="abloc"
                 href="https://github.com/dashboard"

@@ -10,6 +10,7 @@ import bloodhand from '../Assets/bloodhand.png'
 
 const Home = () => {
 
+  const { setvisibility } = useContext(DataContext)
   const { navigate, locationDataobj } = useContext(DataContext)
 
   useEffect(()=>{
@@ -37,7 +38,7 @@ const Home = () => {
   const locationslength = Object.keys(locationDataobj).length
 
   return (
-    <div className='Home'>
+    <div className='Home' onClick={setvisibility(false)}>
       {/* <div className='backgroundspread'>
         <div className='wave4'>
           <div className='bg4'></div>

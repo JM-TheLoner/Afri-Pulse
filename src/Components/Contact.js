@@ -8,7 +8,7 @@ import DataContext from '../Context/DataContext'
 
 
 const Contact = () => {
-  const { navigate, locationDataobj } = useContext(DataContext)
+  const { setvisibility, navigate, locationDataobj } = useContext(DataContext)
 
   const[fullname, setfullname] = useState('')
   const[contactemail, setcontactemail] = useState('')
@@ -84,7 +84,7 @@ const changeit = async (e, open, setopen) =>{
 }
 
   return ( 
-    <div className='Contact'>
+    <div className='Contact' onClick={setvisibility(false)}>
       <div className='backgroundspread'>
         <div className='wave4'>
           <div className='bg4'></div>
@@ -119,7 +119,7 @@ const changeit = async (e, open, setopen) =>{
               target="_blank"
               rel="noopener noreferrer"
               >
-              <div className={!dark ? 'holes' : 'dholes'}>
+              <div className={'holes'}>
                 <p className='line1'>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem</p>
               </div>
             </a>
@@ -128,7 +128,7 @@ const changeit = async (e, open, setopen) =>{
         <div className='contactsameline'>
           <img src={phone} className="ogo2" alt="logo" />
           <figcaption className='ImgTag'>
-            <div className={!dark ? 'phone1' : 'dphone1'}>
+            <div className={'phone1'}>
               <p>+234 809 864 6023</p>
               <p>+234 802 923 7128</p>
             </div>
@@ -137,11 +137,11 @@ const changeit = async (e, open, setopen) =>{
         <div className='contactsameline'>
           <img src={email} className="ogo3" alt="logo" />
           <figcaption className='ImgTag'>
-            <p className={!dark ? 'email' : 'demail'}>AfriPulseHub@gmail.com</p>
+            <p className={'email'}>AfriPulseHub@gmail.com</p>
           </figcaption>
         </div>
         <div>
-          <p className={!dark ? 'soc1' : 'dsoc1'}>Social Media</p>
+          <p className={'soc1'}>Social Media</p>
           <div className='contactsamelinesocs'>
             <a
                 className="loc"
@@ -196,8 +196,8 @@ const changeit = async (e, open, setopen) =>{
         </div>
       </div>
       <div className='contactwrapper'>
-        <div className='getin'><h1 className={!dark ? 'right1' : 'dright1'}>Get In </h1><h2 className={!dark ? 'right2' : 'dright2'}>Touch</h2></div>        
-        <h2 className={!dark ? 'right3' : 'dright3'}>We'd Love To Hear From You!</h2>
+        <div className='getin'><h1 className={'right1'}>Get In </h1><h2 className={'right2'}>Touch</h2></div>        
+        <h2 className={'right3'}>We'd Love To Hear From You!</h2>
         <div className='contactsameline'>
           <h1 className='fullnameText'>Full Name</h1>
           <h1 className='contactemailText'>Email</h1>

@@ -1,16 +1,19 @@
 import '../Stylesheets/Lost.css'
 import '../Stylesheets/Background.css'
-import { useEffect } from 'react'
+import { useEffect, useContext } from 'react'
+import DataContext from '../Context/DataContext'
 import { Link } from 'react-router-dom'
 
 const Lost = () => {
+
+  const { setvisibility } = useContext(DataContext)
 
   useEffect(()=>{
     window.scrollTo(0,0)
  }, [])
 
   return (
-      <div className="Lost">
+      <div className="Lost" onClick={setvisibility(false)}>
         <div className='backgroundspread'>
         <div className='wave4'>
           <div className='bg4'></div>

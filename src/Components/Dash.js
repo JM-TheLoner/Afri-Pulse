@@ -8,7 +8,7 @@ import danceblood from '../Assets/Untitled17_20240329172633.png'
 
 const Dash = () => {
 
-  const { analysis, setanalysis, navigate, locationDataobj } = useContext(DataContext)
+  const { analysis, setanalysis, setvisibility, navigate, locationDataobj } = useContext(DataContext)
 
   const handleanalysisG = async (e) =>{
     e.preventDefault()
@@ -431,7 +431,7 @@ const findmaxlocrec = () =>{
  }
 
   return (
-    <div className='Dash'>
+    <div className='Dash' onClick={setvisibility(false)}>
       <div className='backgroundspread'>
         <div className='wave4'>
           <div className='bg4'></div>

@@ -5,7 +5,6 @@ import { useContext, useState } from 'react'
 
 const Faq = () => {
 
-  const { dark } = useContext(DataContext)
   const [open1, setopen1] = useState(false)
   const [open2, setopen2] = useState(false)
   const [open3, setopen3] = useState(false)

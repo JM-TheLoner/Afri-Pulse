@@ -1,11 +1,7 @@
 import { Link } from 'react-router-dom';
-import DataContext from '../Context/DataContext'
-import { useContext } from 'react'
 import '../Stylesheets/Footer.css'
 
 const Footer = () => {
-
-  const { dark } = useContext(DataContext)
 
   return (  
     <>

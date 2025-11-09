@@ -3,9 +3,9 @@ import '../Stylesheets/Background.css'
 import DataContext from '../Context/DataContext'
 import { useContext, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import img from './homeimg.jpg'
-import bloodbag from './bloodbag.png'
-import bloodhand from './bloodhand.png'
+import img from '../Assets/homeimg.jpg'
+import bloodbag from '../Assets/bloodbag.png'
+import bloodhand from '../Assets/bloodhand.png'
 // import bg from './bg.jpg'
 
 const Home = () => {

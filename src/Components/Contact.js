@@ -1,14 +1,14 @@
 import '../Stylesheets/Contact.css'
-import email from './email.png'
-import lov from './lov.png'
-import soc from './soc.png'
-import phone from './phone.png'
+import email from '../Assets/email.png'
+import lov from '../Assets/lov.png'
+import soc from '../Assets/soc.png'
+import phone from '../Assets/phone.png'
 import { useEffect, useState, useContext } from 'react'
 import DataContext from '../Context/DataContext'
 
 
 const Contact = () => {
-  const { dark, navigate, locationDataobj } = useContext(DataContext)
+  const { navigate, locationDataobj } = useContext(DataContext)
 
   const[fullname, setfullname] = useState('')
   const[contactemail, setcontactemail] = useState('')
@@ -88,7 +88,7 @@ const changeit = async (e, open, setopen) =>{
       <div className='backgroundspread'>
         <div className='wave4'>
           <div className='bg4'></div>
-        </div>
+        </div>  
       </div> 
       <div className='backgroundspread'>
         <div className='wave3'>

@@ -1,13 +1,11 @@
 import '../Stylesheets/About.css'
 import '../Stylesheets/Background.css'
-import logo from './abtimg.jpg'
+import logo from '../Assets/abtimg.jpg'
 import { useEffect, useContext } from 'react'
 import DataContext from '../Context/DataContext'
 
 const About = () => {
 
-  const { dark } = useContext(DataContext)
- 
   useEffect(()=>{
     window.scrollTo(0,0)
  }, [])

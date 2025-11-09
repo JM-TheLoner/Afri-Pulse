@@ -42,14 +42,14 @@ const linkstyle = {
             <img src={logo} className="App-logo2" alt="logo"/>
             <p className='headbtnlinetwo'>AfriPulseHub Blood Works</p>
         </div>        
-        <div className={visibility === true ? 'links' : 'linksclosed'}>
+        <div className={'links'}>
+        {/* <div className={visibility === true ? 'links' : 'linksclosed'}> */}
             <div className='Navbar'>
-                <button  className='menubtn' onClick={(e)=>handlevisibility(e)}>
+                <button  className='menubtn' onClick={setvisibility(true)}>
                     <div className='headbtnline'>
                         <p className='headbtnlineone'>=</p>
                     </div>
                 </button>
-                <img src={logo} className="App-logo1" alt="logo"/>
                 <div>      
                     <div className='linklist' onClick={(e)=>{navhome()}}>    
                         <img src={house} className="homelogo" alt="logo"/>  

@@ -30,7 +30,7 @@
     }
   }
 .Topbar{
-  background:linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 206, 206, 0.85), rgba(255, 109, 111, 0.8));
+  background:linear-gradient(to bottom, rgb(255, 248, 248), rgb(255, 240, 240));
   width:100%;
   font-family:Georgia, 'Times New Roman', Times, serif; 
   height: 3.5em;
@@ -40,8 +40,8 @@
 }
 
 .Navbar{    
-  background:linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(252, 223, 223, 0.85), rgba(255, 206, 206, 0.85));
-  width: 16em;
+  background:rgb(255, 240, 240);
+  width: 200px;
   height: 100vmin;
   font-family:Georgia, 'Times New Roman', Times, serif;  
   z-index: 8;

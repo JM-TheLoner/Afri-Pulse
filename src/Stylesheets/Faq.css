@@ -1,0 +1,537 @@
+.Faq{
+    background-color: rgb(255, 212, 212);
+    min-height: 88vmin;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.faqhead{
+    text-align: center;
+    font-size: 3em;
+    background-color: transparent;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.dfaqhead{
+    text-align: center;
+    font-size: 3em;
+    background-color: transparent;
+    color: #b8b8b8;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.faqdesc{
+    text-align: center;
+    font-size: 1em;
+    background-color: transparent;
+    font-family:'Times New Roman', Times, serif;
+}
+.dfaqdesc{
+    text-align: center;
+    font-size: 1em;
+    background-color: transparent;
+    color: #b8b8b8;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.instructcontent{
+    text-align: left;
+    margin-top: 10px;
+}
+
+.questionwrapper ul{
+    text-align: center;
+    margin-top: 1em;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5em;
+    list-style-type: none;
+}
+
+.qnawrap{
+    margin-left: 15%;
+    min-height: 1em;
+    width: 60%;
+    margin-bottom: 10px;    
+    transition: 100ms ease-in-out 100ms;
+    position: relative;
+}
+.question{
+    background-color: #d1d1d1;
+    width: 100%;
+    height: 2.5em;
+    align-items: center;
+    justify-content: left;
+    display: flex;
+    overflow-wrap: break-word; 
+    font-size: 25px; 
+    font-weight: 500;
+    border-radius: 3px;
+    transition: 100ms ease-in-out 100ms;
+    padding-left: 20px;
+    border-bottom: 2px solid rgb(160, 160, 160);
+}
+.dquestion{
+    background-color: rgb(221, 0, 0);
+    width: 100%;
+    height: 3em;
+    color: #b8b8b8;
+    align-items: center;
+    justify-content: left;
+    display: flex;
+    overflow-wrap: break-word; 
+    font-size: 23px;   
+    font-weight: 500; 
+    border-radius: 3px;
+    transition: 100ms ease-in-out 100ms;
+    padding-left: 10px;
+    border-bottom: 2px solid rgb(160, 160, 160);
+}
+.question:hover{
+    background-color: #b8b8b8;
+}
+
+.wholink{
+    text-align: left;
+    margin-top: 20px;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.wholink:hover{
+    color: red;
+}
+
+@keyframes slideopen {
+    from{
+        background-color: transparent;
+        height: 0em;
+    }
+    to{
+        background-color: rgb(199, 198, 198);
+        height: 10em;
+    }
+  }
+@keyframes slideopenlarge {
+    from{
+        background-color: transparent;
+        height: 0em;
+    }
+    to{
+        background-color: rgb(199, 198, 198);
+        height: 17em;
+    }
+  }
+@keyframes slideopentext {
+    0%{
+        color: transparent;
+        padding-top: 10px;
+    }
+    10%{
+        color: transparent;
+        padding-top: 10px;
+    }
+    100%{
+        color: rgb(0, 0, 0);
+    }
+  }
+
+.answer1{
+    width: 100%;
+    height: 10em;
+    text-align: center;
+    background-color: rgb(199, 198, 198);
+    align-items: center;
+    justify-content: center;
+    overflow-wrap: break-word; 
+    font-size: 19px; 
+    font-weight: 500;
+    border-radius: 05px;
+    padding: 10px 0px 10px 10px;
+    animation: slideopen 175ms linear 0ms 1, slideopentext 700ms linear 0ms 1;
+    transition: 100ms ease-in-out 100ms;
+    border-bottom: 2px solid rgb(43, 43, 43);
+}
+.nanswer1{
+ display: none;
+}
+.answer2{
+    width: 100%;
+    height: 16.5em;
+    text-align: center;
+    background-color: rgb(199, 198, 198);
+    align-items: center;
+    justify-content: center;
+    overflow-wrap: break-word; 
+    font-size: 19px; 
+    font-weight: 500;    
+    border-radius: 10px;
+    padding: 10px 0px 10px 20px;
+    animation: slideopenlarge 175ms linear 0ms 1, slideopentext 700ms linear 0ms 1;
+    transition: 100ms ease-in-out 100ms;
+    border-bottom: 2px solid rgb(43, 43, 43);
+}
+.nanswer2{
+    display: none;
+}
+.answer3{    
+    width: 100%;
+    height: 16.5em;
+    text-align: center;
+    background-color: rgb(199, 198, 198);
+    align-items: center;
+    justify-content: center;
+    overflow-wrap: break-word; 
+    font-size: 19px; 
+    font-weight: 500;    
+    border-radius: 10px;
+    padding: 10px 0px 10px 20px;
+    animation: slideopenlarge  175ms linear 0ms 1, slideopentext 700ms linear 0ms 1;
+    transition: 100ms ease-in-out 100ms;
+    border-bottom: 2px solid rgb(43, 43, 43);
+}
+.nanswer3{
+    display: none;
+}
+.answer4{    
+    width: 100%;
+    height: 16.5em;
+    text-align: center;
+    background-color: rgb(199, 198, 198);
+    align-items: center;
+    justify-content: center;
+    overflow-wrap: break-word; 
+    font-size: 19px; 
+    font-weight: 500;    
+    border-radius: 10px;
+    padding: 10px 0px 10px 20px;
+    animation: slideopenlarge  175ms linear 0ms 1, slideopentext 700ms linear 0ms 1;
+    transition: 100ms ease-in-out 100ms;
+    border-bottom: 2px solid rgb(43, 43, 43);
+}
+.nanswer4{
+    display: none;
+}
+.answer5{
+    width: 100%;
+    height: 17.5em;
+    text-align: center;
+    background-color: rgb(199, 198, 198);
+    align-items: center;
+    justify-content: center;
+    overflow-wrap: break-word; 
+    font-size: 19px; 
+    font-weight: 500;    
+    border-radius: 10px;
+    padding: 1px 0px 10px 10px;
+    animation: slideopen 175ms linear 0ms 1, slideopentext 700ms linear 0ms 1;
+    transition: 100ms ease-in-out 100ms;
+    border-bottom: 2px solid rgb(43, 43, 43);
+}
+.nanswer5{
+    display: none;
+}
+.answer6{
+    width: 100%;
+    height: 10em;
+    text-align: center;
+    background-color: rgb(199, 198, 198);
+    align-items: center;
+    justify-content: center;
+    overflow-wrap: break-word; 
+    font-size: 19px; 
+    font-weight: 500;    
+    border-radius: 10px;
+    padding: 10px 0px 10px 10px;
+    animation: slideopen 175ms linear 0ms 1, slideopentext 700ms linear 0ms 1;
+    transition: 100ms ease-in-out 100ms;
+    border-bottom: 2px solid rgb(43, 43, 43);
+}
+.nanswer6{
+    display: none;
+}
+.answer7{
+    width: 100%;
+    height: 17em;
+    text-align: center;
+    background-color: rgb(199, 198, 198);
+    align-items: center;
+    justify-content: center;
+    overflow-wrap: break-word; 
+    font-size: 19px; 
+    font-weight: 500;    
+    border-radius: 10px;
+    padding: 10px 0px 10px 20px;
+    animation: slideopen 175ms linear 0ms 1, slideopentext 700ms linear 0ms 1;
+    transition: 100ms ease-in-out 100ms;
+    border-bottom: 2px solid rgb(43, 43, 43);
+}
+.nanswer7{
+    display: none;
+}
+
+.ansbutton1{
+    position: relative; left:520px;
+    padding-top: 5px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background: none;
+    color: rgb(116, 116, 116);
+    font-size:30px;
+    font-weight: 700;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 100ms ease-in-out 100ms;
+    transform: rotate(180deg);
+}
+
+.ansbutton1:hover{
+    color: #000000;
+}
+.ansbuttonopen1{
+    position: relative; left:520px;
+    padding-top: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 233, 233);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: rgb(116, 116, 116);
+    font-size:30px;
+    font-weight: 700;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 100ms ease-in-out 100ms;
+}
+
+.ansbuttonopen1:hover{
+    color: #000000;
+}
+.ansbutton2{
+    position: relative; left:208px;
+    padding-top: 5px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background: none;
+    color: rgb(116, 116, 116);
+    font-size:30px;
+    font-weight: 700;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 100ms ease-in-out 100ms;
+    transform: rotate(180deg);
+}
+
+.ansbutton2:hover{
+    color: #000000;
+}
+.ansbuttonopen2{
+    position: relative; left:208px;
+    padding-top: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 233, 233);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: rgb(116, 116, 116);
+    font-size:30px;
+    font-weight: 700;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 100ms ease-in-out 100ms;
+}
+
+.ansbuttonopen2:hover{
+    color: #000000;
+}
+.ansbutton3{
+    position: relative; left:222px;
+    padding-top: 5px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background: none;
+    color: rgb(116, 116, 116);
+    font-size:30px;
+    font-weight: 700;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 100ms ease-in-out 100ms;
+    transform: rotate(180deg);
+}
+
+.ansbutton3:hover{
+    color: #000000;
+}
+.ansbuttonopen3{
+    position: relative; left:222px;
+    padding-top: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 233, 233);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: rgb(116, 116, 116);
+    font-size:30px;
+    font-weight: 700;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 100ms ease-in-out 100ms;
+}
+
+.ansbuttonopen3:hover{
+    color: #000000;
+}
+.ansbutton4{
+    position: relative; left:341px;
+    padding-top: 5px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background: none;
+    color: rgb(116, 116, 116);
+    font-size:30px;
+    font-weight: 700;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 100ms ease-in-out 100ms;
+    transform: rotate(180deg);
+}
+
+.ansbutton4:hover{
+    color: #000000;
+}
+.ansbuttonopen4{
+    position: relative; left:341px;
+    padding-top: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 233, 233);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: rgb(116, 116, 116);
+    font-size:30px;
+    font-weight: 700;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 100ms ease-in-out 100ms;
+}
+
+.ansbuttonopen4:hover{
+    color: #000000;
+}
+.ansbutton5{
+    position: relative; left:281px;
+    padding-top: 5px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background: none;
+    color: rgb(116, 116, 116);
+    font-size:30px;
+    font-weight: 700;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 100ms ease-in-out 100ms;
+    transform: rotate(180deg);
+}
+
+.ansbutton5:hover{
+    color: #000000;
+}
+.ansbuttonopen5{
+    position: relative; left:281px;
+    padding-top: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 233, 233);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: rgb(116, 116, 116);
+    font-size:30px;
+    font-weight: 700;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 100ms ease-in-out 100ms;
+}
+
+.ansbuttonopen5:hover{
+    color: #000000;
+}
+.ansbutton6{
+    position: relative; left:273px;
+    padding-top: 5px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background: none;
+    color: rgb(116, 116, 116);
+    font-size:30px;
+    font-weight: 700;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 100ms ease-in-out 100ms;
+    transform: rotate(180deg);
+}
+
+.ansbutton6:hover{
+    color: #000000;
+}
+.ansbuttonopen6{
+    position: relative; left:273px;
+    padding-top: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 233, 233);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: rgb(116, 116, 116);
+    font-size:30px;
+    font-weight: 700;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 100ms ease-in-out 100ms;
+}
+
+.ansbuttonopen6:hover{
+    color: #000000;
+}
+.ansbutton7{
+    position: relative; left:407px;
+    padding-top: 5px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background: none;
+    color: rgb(116, 116, 116);
+    font-size:30px;
+    font-weight: 700;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 100ms ease-in-out 100ms;
+    transform: rotate(180deg);
+}
+
+.ansbutton7:hover{
+    color: #000000;
+}
+.ansbuttonopen7{
+    position: relative; left:407px;
+    padding-top: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 233, 233);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: rgb(116, 116, 116);
+    font-size:30px;
+    font-weight: 700;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 100ms ease-in-out 100ms;
+}
+
+.ansbuttonopen7:hover{
+    color: #000000;
+}
